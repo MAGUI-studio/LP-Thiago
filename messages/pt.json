@@ -1,0 +1,152 @@
+{
+  "Header": {
+    "about": "Sobre",
+    "services": "Serviços",
+    "school": "Oficina Escola",
+    "routine": "Rotina Técnica",
+    "partners": "Parceiros",
+    "cta": "Entrar em Contato",
+    "badge": "MANUTENÇÃO DE BICICLETAS EM ALTA PERFORMANCE"
+  },
+  "Hero": {
+    "subtitle": "OFICINA DE ALTA PERFORMANCE",
+    "headline": "Precisão que conecta, cuidado que transforma.",
+    "paragraph": "Tecnologia, planejamento personalizado e precisão técnica cirúrgica para entregar revisões e diagnósticos previsíveis, claros e feitos para cada ciclista.",
+    "ctaSchedule": "Agendar avaliação",
+    "ctaServices": "Ver serviços",
+    "pillar1": "Segurança em cada etapa",
+    "pillar2": "Cuidado sem pressa",
+    "pillar3": "Explicações transparentes",
+    "cardTitle": "Marcas",
+    "cardText": "Parcerias ativas com os maiores fornecedores de peças e ferramentas de elite do mercado internacional."
+  },
+  "Stats": {
+    "badge": "O ESPECIALISTA",
+    "title": "Marcos Thiago Bustamante",
+    "description": "Campeão do Desafio Mecânico, Thiago é o cérebro técnico por trás da Thiago Oficina Escola. Ele é amplamente reconhecido no cenário nacional do ciclismo por sua precisão milimétrica e dedicação à manutenção de alta performance.",
+    "desafioTitle": "Desafio Mecânico",
+    "desafioDesc": "Campeão Nacional no maior torneio do país",
+    "locationTitle": "São José dos Campos, SP",
+    "locationDesc": "Atendimento de nível nacional e mundial",
+    "toolsTitle": "Ferramental Premium",
+    "toolsDesc": "Padrão internacional de altíssima precisão"
+  },
+  "About": {
+    "badge": "O Profissional por trás da bancada",
+    "title": "Marcos Thiago Bustamante",
+    "paragraph1": "Reconhecido no cenário nacional do ciclismo, Thiago é amplamente respeitado por sua dedicação técnica extrema. Campeão nacional do Desafio Mecânico, ele consolidou sua carreira garantindo o funcionamento perfeito de bikes que competem em altíssimo nível.",
+    "paragraph2": "Com base em São José dos Campos - SP, ele comanda a Thiago Oficina Escola, um centro conceito onde atua na manutenção cirúrgica de suspensões, links e transmissões eletrônicas, além de treinar a próxima geração de mecânicos profissionais de elite do Brasil.",
+    "bullet1": "Líder em precisão e conhecimento técnico",
+    "bullet2": "Ferramental internacional das melhores marcas",
+    "bullet3": "Suporte técnico presencial em competições mundiais"
+  },
+  "Services": {
+    "badge": "O que fazemos",
+    "title": "Atividades e Serviços Especializados",
+    "description": "Oferecemos serviços de extrema precisão e programas educacionais líderes de mercado para ciclistas exigentes e futuros mecânicos.",
+    "card1Title": "Oficina Conceito",
+    "card1Desc": "Serviços mecânicos de altíssima precisão. Diagnósticos avançados e revisões completas para MTB, Estrada e Triathlon utilizando ferramentas premium de nível internacional.",
+    "card1Footer": "Ferramentas Premium",
+    "card2Title": "Cursos de Formação",
+    "card2Desc": "Capacitação profissional presencial na Oficina Escola e formato digital na plataforma Hotmart. Manutenção detalhada de suspensões e sistemas eletrônicos complexos.",
+    "card2Footer": "Presencial & Digital",
+    "card3Title": "Suporte em Competições",
+    "card3Desc": "Atuação na linha de frente prestando suporte mecânico neutro e especializado em competições de ciclismo nacionais e internacionais de alto rendimento.",
+    "card3Footer": "Atendimento Neutro",
+    "card3Location": "Mundiais"
+  },
+  "School": {
+    "badge": "CURSOS E TREINAMENTOS",
+    "title": "Cursos Individuais e Profissionais",
+    "description": "Treinamentos práticos diretos na bancada com Thiago Bustamante, focados em capacitar você no mais alto nível técnico.",
+    "cta": "Falar no WhatsApp",
+    "viewAll": "Ver todos os cursos",
+    "course1Title": "Mecânica Básica e Preventiva",
+    "course1Desc": "Aprenda a fazer revisões preventivas, regulagem de marchas, freios e cuidados essenciais no dia a dia.",
+    "course2Title": "Manutenção Avançada de Suspensões",
+    "course2Desc": "Calibração fina, lubrificação e reparo de amortecedores traseiros e suspensões Fox e RockShox.",
+    "course3Title": "Freios Hidráulicos e Sangria",
+    "course3Desc": "Manutenção de sistemas hidráulicos de elite, sangria a vácuo e substituição de retentores.",
+    "course4Title": "Transmissões Eletrônicas",
+    "course4Desc": "Configuração, atualização de firmware e ajuste fino de sistemas SRAM AXS e Shimano Di2.",
+    "course5Title": "Montagem e Alinhamento de Rodas",
+    "course5Desc": "Tensionamento de raios, alinhamento de aros de carbono e alumínio, montagem do zero.",
+    "course6Title": "Formação Profissional Completa",
+    "course6Desc": "Treinamento intensivo individual cobrindo toda a mecânica de elite do mercado e gestão de oficina."
+  },
+  "Demo": {
+    "badge": "Demonstração ao Vivo",
+    "title": "Rotina Técnica e Precisão",
+    "description": "Assista a uma das demonstrações de rotina técnica e precisão direto do ambiente de trabalho do mecânico:",
+    "videoBadge": "Vídeo Institucional",
+    "videoDesc": "Bastidores da Thiago Oficina Escola & Manutenção Avançada"
+  },
+  "Partners": {
+    "badge": "Equipamentos e Marcas Parceiras",
+    "title": "Confiado Pelas Melhores Marcas do Mundo"
+  },
+  "CTA": {
+    "title": "Pronto para Elevar a Performance da Sua Bike?",
+    "description": "Entre em contato direto para agendamentos de manutenção de alta precisão ou cursos profissionalizantes.",
+    "ctaOficina": "Agendar na Oficina",
+    "ctaVideos": "Ver Vídeos Técnicos"
+  },
+  "Footer": {
+    "description": "Referência nacional em mecânica de alta performance de MTB, Road e Triathlon.",
+    "channels": "Canais Oficiais",
+    "addressTitle": "Endereço",
+    "addressText": "São José dos Campos, SP\nAtendimento Conceito de Manutenção Avançada",
+    "schoolTitle": "Oficina Escola",
+    "schoolText": "Cursos presenciais e digitais (Hotmart). Capacitação técnica especializada.",
+    "rights": "© {year} Thiago Mecânico. Todos os direitos reservados.",
+    "credits": "Desenvolvido com foco em alta performance."
+  },
+  "Cursos": {
+    "title": "Todos os Cursos",
+    "description": "Capacitação completa e individual direta na bancada. Escolha o curso ideal para seu momento.",
+    "back": "Voltar para o início"
+  },
+  "FAQ": {
+    "title": "Perguntas Frequentes",
+    "description": "Tire suas dúvidas rápidas sobre nossa oficina, agendamentos, prazos e garantia.",
+    "q1": "Como funciona o agendamento de serviços?",
+    "a1": "Você pode agendar diretamente pelo nosso WhatsApp. Faremos uma pré-avaliação do seu equipamento para planejar as peças necessárias antes da sua chegada.",
+    "q2": "Vocês dão garantia nas revisões?",
+    "a2": "Sim, oferecemos garantia total de 30 dias em todos os serviços de ajuste, além da garantia dos fabricantes sobre as peças de reposição instaladas.",
+    "q3": "Vocês fazem manutenção de suspensões importadas?",
+    "a3": "Sim, somos especialistas em Fox, RockShox, Cannondale Lefty, entre outras marcas de elite, utilizando ferramentas oficiais e fluidos originais.",
+    "q4": "Qual o prazo médio de entrega de uma revisão completa?",
+    "a4": "O prazo padrão é de 24 a 48 horas, dependendo da disponibilidade das peças de reposição e da complexidade técnica do diagnóstico."
+  },
+  "ContactMap": {
+    "title": "Localização e Horários",
+    "description": "Visite nossa oficina conceito em São José dos Campos. Atendimento planejado para oferecer a máxima atenção ao seu equipamento.",
+    "hoursTitle": "Horário de Atendimento",
+    "hoursWeek": "Segunda a Sábado",
+    "hoursSaturday": "Sábado",
+    "hoursSunday": "Domingo",
+    "hoursSundayValue": "10:00 - 18:00",
+    "addressTitle": "Endereço Físico",
+    "addressText": "Av. Dep. Benedito Matarazzo, 5101 - Alvorada\nSão José dos Campos - SP\nCEP: 12246-840",
+    "whatsappButton": "Chamar no WhatsApp"
+  },
+  "Testimonials": {
+    "badge": "DEPOIMENTOS",
+    "title": "Quem Confia na Nossa Precisão",
+    "desc": "Veja o feedback de atletas de alto rendimento e alunos que passaram pela nossa oficina escola.",
+    "t1Name": "Bruno Silva",
+    "t1Role": "Atleta de MTB",
+    "t1Text": "A precisão na calibração da minha suspensão Fox foi cirúrgica. Senti a bike muito mais estável nas descidas técnicas.",
+    "t2Name": "Carla Mendes",
+    "t2Role": "Ciclista de Estrada",
+    "t2Text": "Minha transmissão eletrônica Shimano Di2 ficou perfeita. O Thiago explica cada detalhe do diagnóstico antes de iniciar o serviço.",
+    "t3Name": "Rodrigo Ramos",
+    "t3Role": "Aluno Oficina Escola",
+    "t3Text": "O curso de suspensões foi o melhor investimento que fiz. A bancada prática individual faz toda a diferença para o aprendizado."
+  },
+  "WorkspaceGallery": {
+    "badge": "INFRAESTRUTURA",
+    "title": "Estrutura e Equipamentos",
+    "desc": "Um ambiente planejado com ferramental profissional de nível internacional para diagnósticos rápidos e precisos."
+  }
+}

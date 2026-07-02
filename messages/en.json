@@ -1,0 +1,152 @@
+{
+  "Header": {
+    "about": "About",
+    "services": "Services",
+    "school": "Workshop School",
+    "routine": "Technical Routine",
+    "partners": "Partners",
+    "cta": "Get in Touch",
+    "badge": "HIGH-PERFORMANCE BICYCLE MAINTENANCE"
+  },
+  "Hero": {
+    "subtitle": "HIGH-PERFORMANCE WORKSHOP",
+    "headline": "Precision that connects, care that transforms.",
+    "paragraph": "Technology, personalized planning and surgical technical precision to deliver predictable, clear and custom-made overhauls for each cyclist.",
+    "ctaSchedule": "Schedule appraisal",
+    "ctaServices": "View services",
+    "pillar1": "Safety at every step",
+    "pillar2": "Unhurried precision care",
+    "pillar3": "Transparent explanations",
+    "cardTitle": "Brands",
+    "cardText": "Active partnerships with the largest elite parts and tools suppliers in the international market."
+  },
+  "Stats": {
+    "badge": "THE SPECIALIST",
+    "title": "Marcos Thiago Bustamante",
+    "description": "Mechanic Challenge Champion, Thiago is the technical mastermind behind Thiago Workshop School. He is widely recognized in the national cycling scene for his millimetric precision and dedication to high-performance maintenance.",
+    "desafioTitle": "Mechanic Challenge",
+    "desafioDesc": "National Champion in the country's biggest tournament",
+    "locationTitle": "São José dos Campos, SP",
+    "locationDesc": "National and global level service",
+    "toolsTitle": "Premium Tooling",
+    "toolsDesc": "International standard of ultra-precision"
+  },
+  "About": {
+    "badge": "The Professional behind the bench",
+    "title": "Marcos Thiago Bustamante",
+    "paragraph1": "Recognized in the national cycling scene, Thiago is widely respected for his extreme technical dedication. National champion of the Mechanic Challenge, he consolidated his career by ensuring the perfect operation of bikes competing at the highest level.",
+    "paragraph2": "Based in São José dos Campos - SP, he commands the Thiago Workshop School, a concept center where he works in the surgical maintenance of suspensions, links and electronic transmissions, in addition to training the next generation of elite professional mechanics in Brazil.",
+    "bullet1": "Leader in precision and technical knowledge",
+    "bullet2": "International tooling from the best brands",
+    "bullet3": "On-site technical support at world competitions"
+  },
+  "Services": {
+    "badge": "What we do",
+    "title": "Specialized Activities and Services",
+    "description": "We offer high-precision services and market-leading educational programs for demanding cyclists and future mechanics.",
+    "card1Title": "Concept Workshop",
+    "card1Desc": "High-precision mechanical services. Advanced diagnostics and complete overhauls for MTB, Road and Triathlon using premium international standard tools.",
+    "card1Footer": "Premium Tools",
+    "card2Title": "Training Courses",
+    "card2Desc": "In-person professional training at the Workshop School and digital format on the Hotmart platform. Detailed maintenance of complex suspensions and electronic systems.",
+    "card2Footer": "In-Person & Digital",
+    "card3Title": "Competition Support",
+    "card3Desc": "Acting on the front line providing neutral and specialized mechanical support in high-performance national and international cycling competitions.",
+    "card3Footer": "Neutral Service",
+    "card3Location": "World Stage"
+  },
+  "School": {
+    "badge": "COURSES & TRAINING",
+    "title": "Individual & Professional Courses",
+    "description": "Hands-on training directly at the workbench with Thiago Bustamante, focused on training you to the highest technical level.",
+    "cta": "Chat on WhatsApp",
+    "viewAll": "View all courses",
+    "course1Title": "Basic & Preventive Mechanics",
+    "course1Desc": "Learn to perform preventive maintenance, gear tuning, brake adjustments, and essential daily care.",
+    "course2Title": "Advanced Suspension Overhaul",
+    "course2Desc": "Fine-tuning, lubrication, and repair of Fox and RockShox rear shocks and forks.",
+    "course3Title": "Hydraulic Brakes & Bleeding",
+    "course3Desc": "Maintenance of elite hydraulic systems, vacuum bleeding, and seal replacements.",
+    "course4Title": "Electronic Drivetrains",
+    "course4Desc": "Configuration, firmware updates, and fine-tuning of SRAM AXS and Shimano Di2 systems.",
+    "course5Title": "Wheel Building & Truing",
+    "course5Desc": "Spoke tensioning, carbon and alloy rim alignment, custom wheel building from scratch.",
+    "course6Title": "Complete Professional Training",
+    "course6Desc": "Intensive one-on-one training covering the entire elite mechanical market and workshop management."
+  },
+  "Demo": {
+    "badge": "Live Demonstration",
+    "title": "Technical Routine and Precision",
+    "description": "Watch one of the technical routine and precision demonstrations straight from the mechanic's working environment:",
+    "videoBadge": "Institutional Video",
+    "videoDesc": "Behind the scenes of Thiago Workshop School & Advanced Maintenance"
+  },
+  "Partners": {
+    "badge": "Equipment and Partner Brands",
+    "title": "Trusted by the Best Brands in the World"
+  },
+  "CTA": {
+    "title": "Ready to Elevate Your Bike's Performance?",
+    "description": "Get in touch directly for high-precision maintenance appointments or professional training courses.",
+    "ctaOficina": "Schedule at Workshop",
+    "ctaVideos": "Watch Technical Videos"
+  },
+  "Footer": {
+    "description": "National reference in high performance mechanics for MTB, Road and Triathlon.",
+    "channels": "Official Channels",
+    "addressTitle": "Address",
+    "addressText": "São José dos Campos, SP\nConcept Center for Advanced Maintenance",
+    "schoolTitle": "Workshop School",
+    "schoolText": "In-person and digital courses (Hotmart). Specialized technical training.",
+    "rights": "© {year} Thiago Mecânico. All rights reserved.",
+    "credits": "Developed with a focus on high performance."
+  },
+  "Cursos": {
+    "title": "All Courses",
+    "description": "Complete and individual hands-on training directly at the workbench. Choose the ideal course for your goals.",
+    "back": "Back to Home"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Quickly resolve your queries about our workshop, scheduling, turnarounds, and warranties.",
+    "q1": "How does service scheduling work?",
+    "a1": "You can schedule directly via our WhatsApp. We will perform a pre-appraisal of your bike to secure any necessary replacement parts before your arrival.",
+    "q2": "Do you offer a warranty on services?",
+    "a2": "Yes, we offer a comprehensive 30-day warranty on all adjustments, in addition to manufacturer warranties on all installed spare parts.",
+    "q3": "Do you perform maintenance on imported suspensions?",
+    "a3": "Yes, we are specialists in Fox, RockShox, Cannondale Lefty, and other elite brands, using official manufacturer tools and original suspension fluids.",
+    "q4": "What is the average turnaround time for a complete overhaul?",
+    "a4": "Our standard turnaround is 24 to 48 hours, depending on spare part availability and the technical complexity of the diagnostic process."
+  },
+  "ContactMap": {
+    "title": "Location & Opening Hours",
+    "description": "Visit our concept workshop in São José dos Campos. Scheduled service designed to give maximum attention to your equipment.",
+    "hoursTitle": "Opening Hours",
+    "hoursWeek": "Monday to Saturday",
+    "hoursSaturday": "Saturday",
+    "hoursSunday": "Sunday",
+    "hoursSundayValue": "10:00 - 18:00",
+    "addressTitle": "Physical Address",
+    "addressText": "Av. Dep. Benedito Matarazzo, 5101 - Alvorada\nSão José dos Campos - SP\nZIP: 12246-840",
+    "whatsappButton": "Chat on WhatsApp"
+  },
+  "Testimonials": {
+    "badge": "TESTIMONIALS",
+    "title": "Trusted by Riders and Professionals",
+    "desc": "Read feedback from high-performance athletes and mechanics who trained at our workshop school.",
+    "t1Name": "Bruno Silva",
+    "t1Role": "MTB Rider",
+    "t1Text": "The calibration on my Fox suspension was surgical. The bike felt incredibly stable on technical downhill sections.",
+    "t2Name": "Carla Mendes",
+    "t2Role": "Road Cyclist",
+    "t2Text": "My Shimano Di2 electronic drivetrain is performing flawlessly. Thiago explains every detail of the diagnostic before starting the work.",
+    "t3Name": "Rodrigo Ramos",
+    "t3Role": "Workshop School Student",
+    "t3Text": "The suspension servicing course was the best investment I've made. The individual practical workbench makes all the difference."
+  },
+  "WorkspaceGallery": {
+    "badge": "INFRASTRUCTURE",
+    "title": "Syllabus & Workshop Infrastructure",
+    "desc": "A meticulously organized environment with international-grade professional tools for rapid, high-precision diagnostics."
+  }
+}
