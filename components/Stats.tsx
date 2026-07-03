@@ -13,17 +13,16 @@ export default function Stats() {
         
         <div className="p-8 space-y-2">
           <span className="text-5xl font-black text-[#021422] tracking-tighter block font-title">
-            01º
+            +10
           </span>
           <h4 className="font-extrabold text-[#021422] text-sm tracking-wider uppercase">
-            {t("Stats.desafioTitle")}
+            {t("Stats.experienceTitle")}
           </h4>
           <p className="text-xs text-gray-500 font-light leading-relaxed">
-            {t("Stats.desafioDesc")}
+            {t("Stats.experienceDesc")}
           </p>
         </div>
 
-        
         <div className="p-8 space-y-2">
           <span className="text-5xl font-black text-[#021422] tracking-tighter block font-title">
             100%
@@ -36,16 +35,15 @@ export default function Stats() {
           </p>
         </div>
 
-        
         <div className="p-8 space-y-2">
           <span className="text-5xl font-black text-[#021422] tracking-tighter block font-title">
-            Elite
+            +500
           </span>
           <h4 className="font-extrabold text-[#021422] text-sm tracking-wider uppercase">
-            {t("Stats.locationTitle")}
+            {t("Stats.schoolTitle")}
           </h4>
           <p className="text-xs text-gray-500 font-light leading-relaxed">
-            {t("Stats.locationDesc")}
+            {t("Stats.schoolDesc")}
           </p>
         </div>
 

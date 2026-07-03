@@ -27,15 +27,15 @@
     "cardText": "Active partnerships with the largest elite parts and tools suppliers in the international market."
   },
   "Stats": {
-    "badge": "THE SPECIALIST",
-    "title": "Thiago Bustamante",
-    "description": "Mechanic Challenge Champion, Thiago is the technical mastermind behind Thiago Workshop School. He is widely recognized in the national cycling scene for his millimetric precision and dedication to high-performance maintenance.",
-    "desafioTitle": "Mechanic Challenge",
-    "desafioDesc": "National Champion in the country's biggest tournament",
-    "locationTitle": "São José dos Campos, SP",
-    "locationDesc": "National and global level service",
+    "badge": "THE WORKSHOP SCHOOL",
+    "title": "Thiago Mecânica & Oficina Escola",
+    "description": "National reference in high-performance maintenance and professional training for elite bicycle mechanics.",
+    "experienceTitle": "Years of History",
+    "experienceDesc": "Delivering high-performance and high-precision overhauls",
     "toolsTitle": "Premium Tooling",
-    "toolsDesc": "International standard of ultra-precision"
+    "toolsDesc": "Exclusive use of official high-precision tools",
+    "schoolTitle": "Trained Mechanics",
+    "schoolDesc": "Elite mechanics trained at the Workshop School"
   },
   "About": {
     "badge": "The Professional behind the bench",
@@ -64,7 +64,7 @@
   "School": {
     "badge": "HOTMART ONLINE COURSES",
     "title": "Our Suspension & Mechanics Courses",
-    "description": "High-performance technical specialization with Thiago Mecânico. Learn from the professional method directly from the workbench.",
+    "description": "High-performance technical training at Thiago Workshop School. Learn with the professional method directly from a real workbench.",
     "cta": "Chat on WhatsApp",
     "buyCourse": "Buy Now",
     "viewAll": "View all courses",
@@ -94,7 +94,7 @@
     "addressText": "São José dos Campos, SP\nConcept Center for Advanced Maintenance",
     "schoolTitle": "Workshop School",
     "schoolText": "In-person and digital courses (Hotmart). Specialized technical training.",
-    "rights": "© {year} Thiago Mecânico. All rights reserved.",
+    "rights": "© {year} Thiago Mecânica & Oficina Escola. All rights reserved.",
     "credits": "Developed with a focus on high performance.",
     "offeredBy": "Offered by",
     "backToTop": "Back to top"
@@ -102,7 +102,7 @@
   "Cursos": {
     "back": "Back to Home",
     "title": "All Courses",
-    "description": "Browse all available courses on the Hotmart platform taught by Thiago Bustamante.",
+    "description": "Browse all available courses on the Hotmart platform offered by Thiago Workshop School.",
     "searchPlaceholder": "Search course...",
     "course": "course",
     "courses": "courses"
@@ -140,7 +140,7 @@
     "t1Text": "The calibration on my Fox suspension was surgical. The bike felt incredibly stable on technical downhill sections.",
     "t2Name": "Carla Mendes",
     "t2Role": "Road Cyclist",
-    "t2Text": "My Shimano Di2 electronic drivetrain is performing flawlessly. Thiago explains every detail of the diagnostic before starting the work.",
+    "t2Text": "My Shimano Di2 electronic drivetrain is performing flawlessly. The Thiago Mecânica team explains every detail of the diagnostic before starting the work.",
     "t3Name": "Rodrigo Ramos",
     "t3Role": "Workshop School Student",
     "t3Text": "The suspension servicing course was the best investment I've made. The individual practical workbench makes all the difference."

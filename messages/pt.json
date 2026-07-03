@@ -27,15 +27,15 @@
     "cardText": "Parcerias ativas com os maiores fornecedores de peças e ferramentas de elite do mercado internacional."
   },
   "Stats": {
-    "badge": "O ESPECIALISTA",
-    "title": "Thiago Bustamante",
-    "description": "Campeão do Desafio Mecânico, Thiago é o cérebro técnico por trás da Thiago Oficina Escola. Ele é amplamente reconhecido no cenário nacional do ciclismo por sua precisão milimétrica e dedicação à manutenção de alta performance.",
-    "desafioTitle": "Desafio Mecânico",
-    "desafioDesc": "Campeão Nacional no maior torneio do país",
-    "locationTitle": "São José dos Campos, SP",
-    "locationDesc": "Atendimento de nível nacional e mundial",
+    "badge": "A OFICINA ESCOLA",
+    "title": "Thiago Mecânica & Oficina Escola",
+    "description": "Referência nacional em manutenção de alta performance e capacitação profissional de mecânicos de bicicleta de elite.",
+    "experienceTitle": "Anos de História",
+    "experienceDesc": "Entregando revisões de alta performance e precisão",
     "toolsTitle": "Ferramental Premium",
-    "toolsDesc": "Padrão internacional de altíssima precisão"
+    "toolsDesc": "Uso exclusivo de ferramentas oficiais de alta precisão",
+    "schoolTitle": "Alunos Formados",
+    "schoolDesc": "Mecânicos de elite capacitados na Oficina Escola"
   },
   "About": {
     "badge": "O Profissional por trás da bancada",
@@ -64,7 +64,7 @@
   "School": {
     "badge": "CURSOS ONLINE HOTMART",
     "title": "Nossos Cursos de Suspensão e Mecânica",
-    "description": "Capacitação técnica de alta performance com Thiago Mecânico. Aprenda com o método profissional direto da bancada.",
+    "description": "Capacitação técnica de alta performance na Thiago Oficina Escola. Aprenda com o método profissional direto de uma bancada real.",
     "cta": "Falar no WhatsApp",
     "buyCourse": "Garantir Vaga",
     "viewAll": "Ver todos os cursos",
@@ -94,7 +94,7 @@
     "addressText": "São José dos Campos, SP\nAtendimento Conceito de Manutenção Avançada",
     "schoolTitle": "Oficina Escola",
     "schoolText": "Cursos presenciais e digitais (Hotmart). Capacitação técnica especializada.",
-    "rights": "© {year} Thiago Mecânico. Todos os direitos reservados.",
+    "rights": "© {year} Thiago Mecânica & Oficina Escola. Todos os direitos reservados.",
     "credits": "Desenvolvido com foco em alta performance.",
     "offeredBy": "Oferecido por",
     "backToTop": "Voltar ao topo"
@@ -102,7 +102,7 @@
   "Cursos": {
     "back": "Voltar para Início",
     "title": "Todos os Cursos",
-    "description": "Veja abaixo todos os cursos disponíveis na plataforma Hotmart ministrados por Thiago Bustamante.",
+    "description": "Veja abaixo todos os cursos disponíveis na plataforma Hotmart oferecidos pela Thiago Oficina Escola.",
     "searchPlaceholder": "Pesquisar curso...",
     "course": "curso",
     "courses": "cursos"
@@ -140,7 +140,7 @@
     "t1Text": "A precisão na calibração da minha suspensão Fox foi cirúrgica. Senti a bike muito mais estável nas descidas técnicas.",
     "t2Name": "Carla Mendes",
     "t2Role": "Ciclista de Estrada",
-    "t2Text": "Minha transmissão eletrônica Shimano Di2 ficou perfeita. O Thiago explica cada detalhe do diagnóstico antes de iniciar o serviço.",
+    "t2Text": "Minha transmissão eletrônica Shimano Di2 ficou perfeita. A equipe da Thiago Mecânica explica cada detalhe do diagnóstico antes de iniciar o serviço.",
     "t3Name": "Rodrigo Ramos",
     "t3Role": "Aluno Oficina Escola",
     "t3Text": "O curso de suspensões foi o melhor investimento que fiz. A bancada prática individual faz toda a diferença para o aprendizado."
