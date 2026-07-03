@@ -21,8 +21,8 @@ export default function Home() {
       <ScrollSpy />
       <Hero />
       <Stats />
-      <About />
       <Services />
+      <About />
       <School />
       <Partners />
       <Raffle />

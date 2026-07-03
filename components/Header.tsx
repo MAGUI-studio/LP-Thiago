@@ -91,16 +91,17 @@ export default function Header() {
     <>
       <div
         id="inicio"
-        className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10"
+        className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-around gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10"
       >
         <span className="font-title text-sm sm:text-xs leading-snug">
           {t("Header.bannerText")}
         </span>
+
         <Link
           href="https://pay.hotmart.com/E106476498D?off=t79ctl2r&bid=1782556961286"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2 bg-[#021422] text-[#F6AE0D] px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#021422] hover:scale-105 transition-all duration-300 ease-out text-xs font-black shadow-lg"
+          className=" group inline-flex w-full md:w-fit bg-white text-[#021422] font-black px-8 py-4 rounded-none hover:bg-[#F6AE0D] items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300"
         >
           {t("Header.bannerCTA")}
           <ArrowUpRight
@@ -182,12 +183,11 @@ export default function Header() {
             </div>
 
             <Link
-              href="https://api.whatsapp.com/message/XAS6W42TZQO4N1?autoload=1&app_absent=0"
+              href="https://instagram.com/thiagooficinaescola"
               target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-1.5 bg-[#F6AE0D] text-[#021422] font-black px-4 py-2.5 rounded-lg hover:bg-white hover:text-[#021422] transition-all duration-300 text-xs shadow-sm uppercase tracking-wider"
+              className="hidden md:inline-flex bg-white text-[#021422] font-black px-8 py-4 rounded-none hover:bg-[#F6AE0D] items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300"
             >
-              {t("Header.cta")}
+              {t("Hero.ctaSchedule")}
               <ArrowUpRight className="w-4 h-4" weight="bold" />
             </Link>
 

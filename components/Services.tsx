@@ -42,8 +42,8 @@ export default function Services() {
       <div className="w-full px-6 sm:px-12 lg:px-20 space-y-16">
         
         
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-gray-100">
-          <div className="space-y-4 max-w-2xl">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6">
+          <div className="space-y-4">
             <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
               <span className="text-[11px] font-bold text-[#021422]/70 tracking-wider uppercase">
                 {t("Services.badge")}
@@ -70,10 +70,10 @@ export default function Services() {
                 href={service.href}
                 target={service.target}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="group relative bg-white border border-gray-100 p-8 flex flex-col justify-between min-h-[320px] overflow-hidden rounded-none hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                className="group relative bg-white p-8 flex flex-col justify-between min-h-[320px] overflow-hidden rounded-none hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
                 
-                <Icon className="absolute -right-8 -bottom-8 w-44 h-44 text-gray-100 opacity-40 pointer-events-none z-0" />
+                <Icon className="absolute right-0 bottom-0 w-60 h-60 text-gray-100 opacity-70 pointer-events-none z-0" />
                 
                 <div className="relative z-10 space-y-6">
                   
@@ -95,7 +95,7 @@ export default function Services() {
                 </div>
 
                 
-                <div className="relative z-10 pt-6 border-t border-gray-50 flex justify-between items-center mt-6">
+                <div className="relative z-10 pt-6 flex justify-between items-center mt-6">
                   <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
                     {service.footer}
                   </span>

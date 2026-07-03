@@ -14,35 +14,34 @@ export default function Partners() {
     { src: "/marcas/gantech.png", alt: "Gantech" },
   ];
 
-  
   const marqueeLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section id="parceiros" className="py-12 bg-[#FDFDFD] border-t border-b border-gray-100 overflow-hidden w-full relative z-10 select-none">
-      
-      
-      <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
-      <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+    <section
+      id="parceiros"
+      className="py-12 overflow-hidden w-full relative z-10 select-none bg-white"
+    >
+      <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white to-transparent z-20 pointer-events-none"></div>
+      <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white to-transparent z-20 pointer-events-none"></div>
 
       <div className="w-full flex">
         <div className="animate-marquee flex items-center gap-16 sm:gap-24">
           {marqueeLogos.map((logo, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative w-28 h-10 shrink-0 opacity-85 hover:opacity-100 transition-all duration-300"
             >
-              <Image 
-                src={logo.src} 
-                alt={logo.alt} 
-                fill 
-                className="object-contain" 
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                className="object-contain"
                 priority={index < 8}
               />
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 }
