@@ -233,7 +233,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             <Link
               href="https://instagram.com/thiagooficinaescola"
               target="_blank"
-              className="hidden lg:inline-flex bg-white/10 hover:bg-white hover:text-black border border-white/10 text-white font-bold px-6 py-2.5 rounded-full text-xs uppercase tracking-wider transition-all duration-300"
+              className="hidden lg:inline-flex bg-white/10 hover:bg-white hover:text-black border border-white/20 text-white font-bold px-6 py-2.5 rounded-none text-xs uppercase tracking-wider transition-all duration-300 backdrop-blur-md"
             >
               {t("Hero.ctaSchedule")}
             </Link>
@@ -427,6 +427,16 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                     <YoutubeLogo className="w-5 h-5" />
                   </Link>
                 </div>
+
+                <Link
+                  href="https://api.whatsapp.com/message/XAS6W42TZQO4N1?autoload=1&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-black px-4 py-3.5 rounded-none text-xs uppercase tracking-wider shadow-lg hover:bg-white hover:text-black transition-all duration-300 mt-6"
+                >
+                  {t("Header.cta")}
+                  <ArrowUpRight className="w-4 h-4" weight="bold" />
+                </Link>
               </div>
             </div>
           </div>
@@ -809,7 +819,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                   href="https://api.whatsapp.com/message/XAS6W42TZQO4N1?autoload=1&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-1.5 bg-[#F6AE0D] text-[#021422] font-black px-4 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-lg hover:bg-white transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-black px-4 py-3.5 rounded-none text-xs uppercase tracking-wider shadow-lg hover:bg-white hover:text-black transition-all duration-300"
                 >
                   {t("Header.cta")}
                   <ArrowUpRight className="w-4 h-4" weight="bold" />

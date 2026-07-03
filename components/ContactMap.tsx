@@ -76,7 +76,7 @@ export default function ContactMap() {
                 href="https://instagram.com/thiagooficinaescola" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white text-[#021422] font-black px-8 py-4 rounded-none hover:bg-[#F6AE0D] inline-flex items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300 shadow-md"
+                className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-black px-8 py-4 rounded-none hover:bg-white hover:text-black inline-flex items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300 shadow-md"
               >
                 {t("ContactMap.whatsappButton")}
                 <ArrowUpRight className="w-4 h-4" weight="bold" />

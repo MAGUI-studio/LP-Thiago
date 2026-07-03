@@ -125,7 +125,7 @@ export default function Raffle() {
                 href="https://api.whatsapp.com/message/XAS6W42TZQO4N1?autoload=1&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#021422] text-white font-extrabold px-6 py-3.5 rounded-xl hover:bg-[#F6AE0D] hover:text-[#021422] transition-all duration-300 text-xs uppercase tracking-wider shadow-md"
+                className="inline-flex items-center gap-2 bg-[#021422]/10 backdrop-blur-md border border-[#021422]/20 text-[#021422] font-extrabold px-6 py-3.5 rounded-none hover:bg-[#021422] hover:text-white transition-all duration-300 text-xs uppercase tracking-wider shadow-md"
               >
                 {t("Raffle.cta")}
                 <ArrowUpRight className="w-4 h-4" weight="bold" />

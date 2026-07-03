@@ -44,16 +44,16 @@ export default function Hero() {
             <Link
               href="https://instagram.com/thiagooficinaescola"
               target="_blank"
-              className="bg-white text-[#010a12] font-semibold px-8 py-3.5 rounded-full hover:bg-[#F6AE0D] transition-colors text-sm uppercase tracking-wider shadow-md duration-300"
+              className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold px-8 py-3.5 rounded-none hover:bg-white hover:text-black transition-all duration-300 text-sm uppercase tracking-wider shadow-md"
             >
               {t("Hero.ctaSchedule")}
             </Link>
             <Link
               href="#servicos"
-              className="text-white hover:text-[#F6AE0D] font-semibold text-sm uppercase tracking-wider flex items-center gap-1.5 transition-colors group"
+              className="bg-white/5 backdrop-blur-md border border-white/10 text-white font-semibold px-8 py-3.5 rounded-none hover:bg-white hover:text-black transition-all duration-300 text-sm uppercase tracking-wider shadow-md flex items-center gap-1.5"
             >
               {t("Hero.ctaServices")}
-              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

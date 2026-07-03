@@ -21,7 +21,7 @@ export default function CTA() {
             href="https://instagram.com/thiagooficinaescola" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-[#F6AE0D] text-[#021422] font-extrabold px-8 py-4 rounded-lg hover:bg-white transition-all duration-300 shadow-xl flex items-center gap-2"
+            className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-extrabold px-8 py-4 rounded-none hover:bg-white hover:text-black transition-all duration-300 shadow-xl flex items-center gap-2"
           >
             {t("CTA.ctaOficina")}
             <ArrowRight className="w-5 h-5" weight="bold" />
@@ -30,7 +30,7 @@ export default function CTA() {
             href="https://youtube.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-transparent border border-white/20 hover:border-[#F6AE0D] text-white font-semibold px-8 py-4 rounded-lg hover:text-[#F6AE0D] transition-all duration-300 flex items-center gap-2"
+            className="bg-white/5 backdrop-blur-md border border-white/10 text-white font-semibold px-8 py-4 rounded-none hover:bg-white hover:text-black transition-all duration-300 flex items-center gap-2"
           >
             <YoutubeLogo className="w-5 h-5" /> {t("CTA.ctaVideos")}
           </a>
