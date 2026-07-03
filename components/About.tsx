@@ -65,7 +65,7 @@ export default function About() {
               <div className="relative w-full h-full rounded-none overflow-hidden bg-gray-50">
                 <Image 
                   src="/thiago.png" 
-                  alt="Marcos Thiago Bustamante" 
+                  alt="Thiago Bustamante" 
                   fill
                   className="object-cover object-center hover:scale-105 transition-transform duration-700"
                   priority

@@ -43,7 +43,7 @@ export default function Team() {
 
   const teamMembers = [
     {
-      name: "Marcos Thiago Bustamante",
+      name: "Thiago Bustamante",
       role: "Fundador & Especialista",
       desc: "Campeão Nacional do Desafio Mecânico, especialista em suspensões e transmissões de alta performance.",
       photo: "/thiago.png",
@@ -129,22 +129,22 @@ export default function Team() {
             {teamMembers.map((member, index) => (
               <div 
                 key={index} 
-                className="snap-start shrink-0 w-[290px] sm:w-[320px] lg:w-[calc((100%-64px)/3)] bg-white border border-gray-100 p-6 flex flex-col justify-between rounded-none shadow-sm hover:shadow-md transition-all duration-300 min-h-[420px]"
+                className="snap-start shrink-0 w-[290px] sm:w-[320px] lg:w-[calc((100%-64px)/3)] flex flex-col justify-between rounded-none transition-all duration-300 min-h-[420px]"
               >
                 <div className="space-y-6">
                   
                   {/* Image Wrapper */}
-                  <div className="relative aspect-[3/4] w-full bg-gray-50 border border-gray-100 rounded-none overflow-hidden">
+                  <div className="relative aspect-[3/4] w-full rounded-none overflow-hidden">
                     <Image 
                       src={member.photo} 
                       alt={member.name} 
                       fill 
-                      className="object-cover object-center hover:scale-105 transition-transform duration-700"
+                      className="object-cover object-center"
                     />
                   </div>
 
                   {/* Details */}
-                  <div className="space-y-2">
+                  <div className="space-y-2 p-5">
                     <span className="text-[10px] font-bold text-[#F6AE0D] uppercase tracking-wider block">
                       {member.role}
                     </span>
@@ -159,7 +159,7 @@ export default function Team() {
                 </div>
 
                 {/* Socials */}
-                <div className="pt-4 border-t border-gray-50 flex items-center justify-between mt-6">
+                <div className="pt-4 border-t border-gray-50 flex items-center justify-between mt-6 px-5 pb-5">
                   <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                     Contato
                   </span>
