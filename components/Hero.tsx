@@ -64,7 +64,7 @@ export default function Hero() {
         {/* Lado da Imagem com Clip Path */}
         <div className="relative w-full h-[400px] lg:h-auto overflow-hidden bg-[#0a1f30] [clip-path:polygon(0_8%,100%_0,100%_100%,0_100%)] lg:[clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)]">
           <Image
-            src="/hero.png"
+            src="/hero.webp"
             alt="Thiago Oficina Escola"
             fill
             className="object-cover object-center scale-105"

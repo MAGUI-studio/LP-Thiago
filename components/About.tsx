@@ -15,7 +15,7 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="relative w-full aspect-[4/5] lg:aspect-[3/4]">
           <Image
-            src="/thiago.png"
+            src="/thiago.webp"
             alt="Thiago Bustamante"
             fill
             className="object-cover object-center"

@@ -12,7 +12,7 @@ export default function WhatsAppWidget() {
       className="fixed bottom-6 right-6 z-50 overflow-hidden hover:scale-110 active:scale-95 transition-transform duration-300 flex items-center justify-center cursor-pointer"
     >
       <Image
-        src="/whatsapp.png"
+        src="/whatsapp.webp"
         alt="WhatsApp"
         width={0}
         height={0}

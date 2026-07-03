@@ -12,7 +12,12 @@
     "anchorAbout": "sobre",
     "anchorServices": "servicos",
     "anchorSchool": "escola",
-    "anchorContact": "contato"
+    "anchorContact": "contato",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "structure": "Estrutura",
+    "raffle": "Rifa",
+    "contact": "Contato"
   },
   "Hero": {
     "subtitle": "OFICINA DE ALTA PERFORMANCE",
@@ -169,5 +174,10 @@
     "detail1": "Poste Pneumático DMD: Robustez máxima para elevação de bicicletas pesadas de e-bike e MTB.",
     "detail2": "Braço Longaero: Ajuste milimétrico para fixação segura direto na bancada de trabalho.",
     "cta": "Adquirir Números"
+  },
+  "Metadata": {
+    "title": "Thiago Mecânico | Oficina e Escola de Mecânica de Bicicletas de Elite",
+    "description": "Oficina conceito de bicicletas e escola de capacitação profissional em mecânica avançada de suspensões e transmissões eletrônicas em São José dos Campos.",
+    "keywords": "oficina de bicicleta, escola de mecanica de bicicleta, suspensao fox, suspensao rockshox, shimano di2, sram axs, sao jose dos campos"
   }
 }

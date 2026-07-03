@@ -12,7 +12,12 @@
     "anchorAbout": "about",
     "anchorServices": "services",
     "anchorSchool": "school",
-    "anchorContact": "contact"
+    "anchorContact": "contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "structure": "Infrastructure",
+    "raffle": "Raffle",
+    "contact": "Contact"
   },
   "Hero": {
     "subtitle": "HIGH-PERFORMANCE WORKSHOP",
@@ -169,5 +174,10 @@
     "detail1": "DMD Pneumatic Stand: Maximum robustness for raising heavy bikes such as e-bikes and MTBs.",
     "detail2": "Longaero Arm: Millimetric adjustments for secure workbench mount.",
     "cta": "Get Numbers"
+  },
+  "Metadata": {
+    "title": "Thiago Mecânico | Elite Bicycle Workshop & School",
+    "description": "Concept bicycle workshop and professional training school in advanced suspension and electronic drivetrains in São José dos Campos.",
+    "keywords": "bicycle workshop, bike repair shop, bicycle mechanics school, fox suspension repair, shimano di2, sram axs, sao jose dos campos"
   }
 }

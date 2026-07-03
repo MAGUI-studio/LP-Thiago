@@ -10,9 +10,9 @@ export default function Raffle() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
-    "/rifa/poste-pneumatico-dmd-braco-longaero/img-01.png",
-    "/rifa/poste-pneumatico-dmd-braco-longaero/img-02.png",
-    "/rifa/poste-pneumatico-dmd-braco-longaero/img-03.png",
+    "/rifa/poste-pneumatico-dmd-braco-longaero/img-01.webp",
+    "/rifa/poste-pneumatico-dmd-braco-longaero/img-02.webp",
+    "/rifa/poste-pneumatico-dmd-braco-longaero/img-03.webp",
   ];
 
   const handlePrev = () => {

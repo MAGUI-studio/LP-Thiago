@@ -12,22 +12,22 @@ export default function WorkspaceGallery() {
 
   const items = [
     { 
-      src: "/painel-de-ferramentas.png", 
+      src: "/painel-de-ferramentas.webp", 
       translationKey: "tag1",
       gridClass: "col-span-1 sm:col-span-2 sm:row-span-2 md:col-span-2 md:row-span-2" 
     },
     { 
-      src: "/ferramentas.png", 
+      src: "/ferramentas.webp", 
       translationKey: "tag2",
       gridClass: "col-span-1 sm:col-span-2 sm:row-span-1 md:col-span-2 md:row-span-1" 
     },
     { 
-      src: "/servico-sendo-realizado-01.png", 
+      src: "/servico-sendo-realizado-01.webp", 
       translationKey: "tag3",
       gridClass: "col-span-1 sm:col-span-1 sm:row-span-1 md:col-span-1 md:row-span-1" 
     },
     { 
-      src: "/servico-sendo-realizado-02.png", 
+      src: "/servico-sendo-realizado-02.webp", 
       translationKey: "tag4",
       gridClass: "col-span-1 sm:col-span-1 sm:row-span-1 md:col-span-1 md:row-span-1" 
     },

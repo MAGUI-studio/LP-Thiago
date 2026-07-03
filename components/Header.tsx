@@ -81,11 +81,27 @@ export default function Header() {
   const anchorServices = t("Header.anchorServices");
   const anchorSchool = t("Header.anchorSchool");
   const anchorContact = t("Header.anchorContact");
+  const anchorStructure = "estrutura";
+  const anchorRaffle = "rifa";
 
   const aboutHref = isHome ? `#${anchorAbout}` : `/#${anchorAbout}`;
   const servicesHref = isHome ? `#${anchorServices}` : `/#${anchorServices}`;
   const schoolHref = isHome ? `#${anchorSchool}` : `/#${anchorSchool}`;
+  const structureHref = isHome ? `#${anchorStructure}` : `/#${anchorStructure}`;
+  const raffleHref = isHome ? `#${anchorRaffle}` : `/#${anchorRaffle}`;
   const contactHref = isHome ? `#${anchorContact}` : `/#${anchorContact}`;
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    if (isHome) {
+      e.preventDefault();
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.pushState(null, "", `#${targetId}`);
+        setIsMobileMenuOpen(false);
+      }
+    }
+  };
 
   return (
     <>
@@ -124,7 +140,7 @@ export default function Header() {
               className="relative w-28 h-16 flex items-center justify-center"
             >
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Thiago Mecânico Logo"
                 width={112}
                 height={64}
@@ -143,7 +159,7 @@ export default function Header() {
                 aria-expanded={isDesktopDropdownOpen}
               >
                 <Image
-                  src={`/idiomas/${locale}.png`}
+                  src={`/idiomas/${locale}.webp`}
                   alt={getLocaleName(locale)}
                   width={24}
                   height={16}
@@ -168,7 +184,7 @@ export default function Header() {
                         className="p-0.5 hover:scale-110 transition-transform duration-200 cursor-pointer"
                       >
                         <Image
-                          src={`/idiomas/${loc}.png`}
+                          src={`/idiomas/${loc}.webp`}
                           alt={getLocaleName(loc)}
                           width={24}
                           height={16}
@@ -194,6 +210,7 @@ export default function Header() {
             <button
               onClick={() => setIsMobileMenuOpen(true)}
               className="md:hidden w-10 h-10 border border-white/10 rounded-lg flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+              aria-label={t("Header.openMenu")}
             >
               <List className="w-5 h-5" weight="bold" />
             </button>
@@ -204,6 +221,7 @@ export default function Header() {
           <nav className="flex items-center gap-10">
             <Link
               href={aboutHref}
+              onClick={(e) => handleScroll(e, anchorAbout)}
               className="text-gray-300 hover:text-[#F6AE0D] transition-colors"
             >
               <span className="text-white/40 font-light mr-1">01</span>{" "}
@@ -211,6 +229,7 @@ export default function Header() {
             </Link>
             <Link
               href={servicesHref}
+              onClick={(e) => handleScroll(e, anchorServices)}
               className="text-gray-300 hover:text-[#F6AE0D] transition-colors"
             >
               <span className="text-white/40 font-light mr-1">02</span>{" "}
@@ -218,17 +237,35 @@ export default function Header() {
             </Link>
             <Link
               href={schoolHref}
+              onClick={(e) => handleScroll(e, anchorSchool)}
               className="text-gray-300 hover:text-[#F6AE0D] transition-colors"
             >
               <span className="text-white/40 font-light mr-1">03</span>{" "}
               {t("Header.school")}
             </Link>
             <Link
-              href={contactHref}
+              href={structureHref}
+              onClick={(e) => handleScroll(e, anchorStructure)}
               className="text-gray-300 hover:text-[#F6AE0D] transition-colors"
             >
               <span className="text-white/40 font-light mr-1">04</span>{" "}
-              {t("Footer.addressTitle")}
+              {t("Header.structure")}
+            </Link>
+            <Link
+              href={raffleHref}
+              onClick={(e) => handleScroll(e, anchorRaffle)}
+              className="text-gray-300 hover:text-[#F6AE0D] transition-colors"
+            >
+              <span className="text-white/40 font-light mr-1">05</span>{" "}
+              {t("Header.raffle")}
+            </Link>
+            <Link
+              href={contactHref}
+              onClick={(e) => handleScroll(e, anchorContact)}
+              className="text-gray-300 hover:text-[#F6AE0D] transition-colors"
+            >
+              <span className="text-white/40 font-light mr-1">06</span>{" "}
+              {t("Header.contact")}
             </Link>
           </nav>
 
@@ -272,7 +309,7 @@ export default function Header() {
                 <div className="flex items-center justify-between border-b border-white/10 pb-5">
                   <div className="relative w-24 h-14">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Logo"
                       fill
                       className="object-contain"
@@ -281,6 +318,7 @@ export default function Header() {
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+                    aria-label={t("Header.closeMenu")}
                   >
                     <X className="w-5 h-5" weight="bold" />
                   </button>
@@ -289,7 +327,7 @@ export default function Header() {
                 <nav className="flex flex-col gap-2 font-black uppercase tracking-wider font-title text-base">
                   <Link
                     href={aboutHref}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => handleScroll(e, anchorAbout)}
                     className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
                   >
                     <span>{t("Header.about")}</span>
@@ -299,7 +337,7 @@ export default function Header() {
                   </Link>
                   <Link
                     href={servicesHref}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => handleScroll(e, anchorServices)}
                     className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
                   >
                     <span>{t("Header.services")}</span>
@@ -309,7 +347,7 @@ export default function Header() {
                   </Link>
                   <Link
                     href={schoolHref}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => handleScroll(e, anchorSchool)}
                     className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
                   >
                     <span>{t("Header.school")}</span>
@@ -318,13 +356,33 @@ export default function Header() {
                     </span>
                   </Link>
                   <Link
-                    href={contactHref}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 transition-colors group"
+                    href={structureHref}
+                    onClick={(e) => handleScroll(e, anchorStructure)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
                   >
-                    <span>{t("Footer.addressTitle")}</span>
+                    <span>{t("Header.structure")}</span>
                     <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
                       04/
+                    </span>
+                  </Link>
+                  <Link
+                    href={raffleHref}
+                    onClick={(e) => handleScroll(e, anchorRaffle)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
+                  >
+                    <span>{t("Header.raffle")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      05/
+                    </span>
+                  </Link>
+                  <Link
+                    href={contactHref}
+                    onClick={(e) => handleScroll(e, anchorContact)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 transition-colors group"
+                  >
+                    <span>{t("Header.contact")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      06/
                     </span>
                   </Link>
                 </nav>
@@ -345,7 +403,7 @@ export default function Header() {
                     >
                       <div className="flex items-center gap-2">
                         <Image
-                          src={`/idiomas/${locale}.png`}
+                          src={`/idiomas/${locale}.webp`}
                           alt={getLocaleName(locale)}
                           width={18}
                           height={12}
@@ -372,7 +430,7 @@ export default function Header() {
                               className="flex items-center gap-2.5 px-4 py-3 text-xs font-semibold text-white hover:bg-white/5 w-full text-left transition-colors cursor-pointer"
                             >
                               <Image
-                                src={`/idiomas/${loc}.png`}
+                                src={`/idiomas/${loc}.webp`}
                                 alt={getLocaleName(loc)}
                                 width={18}
                                 height={12}

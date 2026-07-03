@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Link href="#" className="relative w-28 h-16 flex items-center justify-center">
                 <Image 
-                  src="/logo.png" 
+                  src="/logo.webp" 
                   alt="Thiago Mecânico Logo" 
                   width={112} 
                   height={64} 

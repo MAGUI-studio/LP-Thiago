@@ -12,7 +12,12 @@
     "anchorAbout": "sobre",
     "anchorServices": "servicios",
     "anchorSchool": "escuela",
-    "anchorContact": "contacto"
+    "anchorContact": "contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "structure": "Estructura",
+    "raffle": "Rifa",
+    "contact": "Contacto"
   },
   "Hero": {
     "subtitle": "TALLER DE ALTO RENDIMIENTO",
@@ -170,5 +175,10 @@
     "detail2": "Brazo Longaero: Ajuste milimétrico para fijación segura directamente al banco de trabajo.",
     "cta": "Adquirir Números",
     "whatsappInfo": ""
+  },
+  "Metadata": {
+    "title": "Thiago Mecânico | Taller Concepto y Escuela de Mecánica de Bicicletas",
+    "description": "Taller concepto de bicicletas y escuela de capacitación profesional en mecánica avanzada de suspensiones y transmisión electrónica en São José dos Campos.",
+    "keywords": "taller de bicicletas, escuela de mecanica de bicicletas, reparacion suspension fox, shimano di2, sram axs, sao jose dos campos"
   }
 }

@@ -46,7 +46,7 @@ export default function Team() {
       name: "Thiago Bustamante",
       role: "Fundador & Especialista",
       desc: "Campeão Nacional do Desafio Mecânico, especialista em suspensões e transmissões de alta performance.",
-      photo: "/thiago.png",
+      photo: "/thiago.webp",
       instagram: "https://www.instagram.com/thiagooficinaescola"
     },
     {

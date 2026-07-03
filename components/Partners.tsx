@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function Partners() {
   const logos = [
-    { src: "/marcas/parktool.png", alt: "Park Tool" },
-    { src: "/marcas/knipex.png", alt: "Knipex" },
-    { src: "/marcas/joes.png", alt: "Joe's No Flats" },
-    { src: "/marcas/session.png", alt: "Session Parts" },
-    { src: "/marcas/blump.png", alt: "Blump" },
-    { src: "/marcas/cmb.png", alt: "CMB" },
-    { src: "/marcas/evoil.png", alt: "Evoil" },
-    { src: "/marcas/gantech.png", alt: "Gantech" },
+    { src: "/marcas/parktool.webp", alt: "Park Tool" },
+    { src: "/marcas/knipex.webp", alt: "Knipex" },
+    { src: "/marcas/joes.webp", alt: "Joe's No Flats" },
+    { src: "/marcas/session.webp", alt: "Session Parts" },
+    { src: "/marcas/blump.webp", alt: "Blump" },
+    { src: "/marcas/cmb.webp", alt: "CMB" },
+    { src: "/marcas/evoil.webp", alt: "Evoil" },
+    { src: "/marcas/gantech.webp", alt: "Gantech" },
   ];
 
   const marqueeLogos = [...logos, ...logos, ...logos, ...logos];

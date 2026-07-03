@@ -1,18 +1,20 @@
+import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import ScrollSpy from "@/components/ScrollSpy";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
-import Team from "@/components/Team";
 import Services from "@/components/Services";
 import School from "@/components/School";
-import Raffle from "@/components/Raffle";
 import Partners from "@/components/Partners";
-import WorkspaceGallery from "@/components/WorkspaceGallery";
-import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
-import ContactMap from "@/components/ContactMap";
 import Footer from "@/components/Footer";
+
+const Team = dynamic(() => import("@/components/Team"));
+const WorkspaceGallery = dynamic(() => import("@/components/WorkspaceGallery"));
+const Testimonials = dynamic(() => import("@/components/Testimonials"));
+const FAQ = dynamic(() => import("@/components/FAQ"));
+const Raffle = dynamic(() => import("@/components/Raffle"));
+const ContactMap = dynamic(() => import("@/components/ContactMap"));
 
 export default function Home() {
   return (

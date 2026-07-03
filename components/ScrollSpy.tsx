@@ -11,6 +11,8 @@ export default function ScrollSpy() {
       t("Header.anchorAbout"),
       t("Header.anchorServices"),
       t("Header.anchorSchool"),
+      "estrutura",
+      "rifa",
       t("Header.anchorContact"),
     ];
 
