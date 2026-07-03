@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 export default function CursosLayout({
   children,
@@ -8,7 +8,7 @@ export default function CursosLayout({
 }) {
   return (
     <div className="bg-[#FDFDFD] text-[#021422] font-sans antialiased min-h-screen flex flex-col selection:bg-[#F6AE0D] selection:text-[#021422]">
-      <Header />
+      <Hero  />
       <div className="flex-grow">
         {children}
       </div>

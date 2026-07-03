@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Header from "@/components/Header";
 import ScrollSpy from "@/components/ScrollSpy";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
@@ -24,13 +23,13 @@ export default function Home() {
       <Stats />
       <Services />
       <About />
-      <School />
       <Partners />
+      <School />
       <Team />
       <WorkspaceGallery />
+      <Raffle />
       <Testimonials />
       <FAQ />
-      <Raffle />
       <ContactMap />
       <Footer />
     </div>
