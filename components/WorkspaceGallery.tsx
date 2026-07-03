@@ -38,7 +38,7 @@ export default function WorkspaceGallery() {
           {items.map((item, index) => (
             <div 
               key={index}
-              className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-gray-100 group shadow-md"
+              className="relative aspect-[4/5] rounded-none overflow-hidden border border-gray-100 group shadow-md"
             >
               <Image 
                 src={item.src} 

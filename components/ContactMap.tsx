@@ -25,7 +25,7 @@ export default function ContactMap() {
               <p className="text-gray-500 font-light text-sm sm:text-base leading-relaxed">
                 {t("ContactMap.description")}
               </p>
-              <div className="w-16 h-1.5 bg-[#F6AE0D] rounded-full"></div>
+              <div className="w-16 h-1.5 bg-[#F6AE0D] rounded-none"></div>
             </div>
 
             {/* Info blocks */}
@@ -33,7 +33,7 @@ export default function ContactMap() {
               
               {/* Address detail */}
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#021422]/5 flex items-center justify-center text-[#F6AE0D] shrink-0 mt-1">
+                <div className="w-10 h-10 rounded-none bg-[#021422]/5 flex items-center justify-center text-[#F6AE0D] shrink-0 mt-1">
                   <MapPin className="w-5 h-5" weight="fill" />
                 </div>
                 <div>
@@ -48,7 +48,7 @@ export default function ContactMap() {
 
               {/* Working Hours detail */}
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#021422]/5 flex items-center justify-center text-[#F6AE0D] shrink-0 mt-1">
+                <div className="w-10 h-10 rounded-none bg-[#021422]/5 flex items-center justify-center text-[#F6AE0D] shrink-0 mt-1">
                   <Clock className="w-5 h-5" weight="fill" />
                 </div>
                 <div className="w-full space-y-2">
@@ -76,7 +76,7 @@ export default function ContactMap() {
                 href="https://instagram.com/thiagooficinaescola" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#021422] text-white font-extrabold px-6 py-3.5 rounded-xl hover:bg-[#F6AE0D] hover:text-[#021422] transition-colors text-xs uppercase tracking-wider shadow-md"
+                className="inline-flex items-center gap-2 bg-[#021422] text-white font-extrabold px-6 py-3.5 rounded-none hover:bg-[#F6AE0D] hover:text-[#021422] transition-colors text-xs uppercase tracking-wider shadow-md"
               >
                 {t("ContactMap.whatsappButton")}
                 <ArrowUpRight className="w-4 h-4" weight="bold" />
@@ -84,8 +84,8 @@ export default function ContactMap() {
             </div>
           </div>
 
-          {/* Right Column: Google Maps Embed Viewport */}
-          <div className="lg:col-span-7 relative h-[380px] lg:h-auto min-h-[380px] rounded-3xl overflow-hidden border border-gray-200 shadow-lg">
+          {/* Right Column: Google Maps Embed Viewport (Straight Borders, No Grayscale) */}
+          <div className="lg:col-span-7 relative h-[380px] lg:h-auto min-h-[380px] rounded-none overflow-hidden border border-gray-200 shadow-lg">
             <iframe 
               src="https://maps.google.com/maps?q=THIAGO%20OFICINA%20ESCOLA,%20Av.%20Dep.%20Benedito%20Matarazzo,%205101&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%" 
@@ -94,7 +94,7 @@ export default function ContactMap() {
               allowFullScreen={true}
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full transition-all duration-700"
             ></iframe>
           </div>
 

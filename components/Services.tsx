@@ -1,125 +1,111 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ArrowUpRight } from "@phosphor-icons/react";
+import { ArrowUpRight, Wrench, GraduationCap, Trophy } from "@phosphor-icons/react";
 import Link from "next/link";
 
 export default function Services() {
   const t = useTranslations();
 
+  const servicesData = [
+    {
+      number: "01",
+      title: t("Services.card1Title"),
+      desc: t("Services.card1Desc"),
+      footer: t("Services.card1Footer"),
+      href: "https://instagram.com/thiagooficinaescola",
+      target: "_blank",
+      icon: Wrench
+    },
+    {
+      number: "02",
+      title: t("Services.card2Title"),
+      desc: t("Services.card2Desc"),
+      footer: t("Services.card2Footer"),
+      href: "#escola",
+      target: undefined,
+      icon: GraduationCap
+    },
+    {
+      number: "03",
+      title: t("Services.card3Title"),
+      desc: t("Services.card3Desc"),
+      footer: t("Services.card3Footer"),
+      href: "https://instagram.com/thiagooficinaescola",
+      target: "_blank",
+      icon: Trophy
+    }
+  ];
+
   return (
-    <section id={t("Header.anchorServices")} className="py-24 bg-gray-50/50 border-y border-gray-100 font-sans">
-      <div className="w-full px-6 sm:px-12 lg:px-20">
+    <section id={t("Header.anchorServices")} className="py-24 bg-white text-[#021422] font-sans w-full">
+      <div className="w-full px-6 sm:px-12 lg:px-20 space-y-16">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          
-          {/* Left Column: Sticky Title Block */}
-          <div className="lg:col-span-4 lg:sticky lg:top-24 space-y-6">
-            <span className="text-xs font-bold text-[#F6AE0D] tracking-[0.2em] uppercase block">
-              {t("Services.badge")}
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-[#021422] tracking-tight leading-none font-title">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-gray-100">
+          <div className="space-y-4 max-w-2xl">
+            <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
+              <span className="text-[11px] font-bold text-[#021422]/70 tracking-wider uppercase">
+                {t("Services.badge")}
+              </span>
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight leading-none font-title text-[#021422]">
               {t("Services.title")}
             </h2>
-            <p className="text-gray-500 font-light text-sm sm:text-base leading-relaxed">
-              {t("Services.description")}
-            </p>
-            <div className="w-20 h-1 bg-[#F6AE0D]"></div>
           </div>
+          <p className="text-gray-500 font-light text-sm sm:text-base leading-relaxed max-w-sm">
+            {t("Services.description")}
+          </p>
+        </div>
 
-          {/* Right Column: High-Impact Vertical Service List */}
-          <div className="lg:col-span-8 border-t border-gray-200 divide-y divide-gray-200">
+        {/* Grid of Cards (Straight Borders, Watermark Icons) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {servicesData.map((service, index) => {
+            const Icon = service.icon;
+            const isExternal = service.target === "_blank";
             
-            {/* Service 1 */}
-            <Link 
-              href="https://instagram.com/thiagooficinaescola" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 group hover:px-4 hover:bg-[#021422] transition-all duration-500 rounded-xl"
-            >
-              <div className="flex gap-6 items-start">
-                <span className="text-xl font-bold font-mono text-[#F6AE0D] tracking-wider pt-1">
-                  01 /
-                </span>
-                <div className="space-y-2">
-                  <h3 className="text-xl sm:text-2xl font-black text-[#021422] group-hover:text-white transition-colors duration-300 font-title">
-                    {t("Services.card1Title")}
-                  </h3>
-                  <p className="text-sm text-gray-500 group-hover:text-gray-300 transition-colors duration-300 font-light max-w-xl">
-                    {t("Services.card1Desc")}
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 self-end sm:self-center shrink-0">
-                <span className="text-xs font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">
-                  {t("Services.card1Footer")}
-                </span>
-                <div className="w-10 h-10 rounded-full border border-gray-200 group-hover:border-white/30 flex items-center justify-center text-[#021422] group-hover:text-white transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" weight="bold" />
-                </div>
-              </div>
-            </Link>
+            return (
+              <Link
+                key={index}
+                href={service.href}
+                target={service.target}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+                className="group relative bg-white border border-gray-100 p-8 flex flex-col justify-between min-h-[320px] overflow-hidden rounded-none hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              >
+                {/* Watermark Icon */}
+                <Icon className="absolute -right-8 -bottom-8 w-44 h-44 text-gray-100 opacity-40 pointer-events-none z-0" />
+                
+                <div className="relative z-10 space-y-6">
+                  {/* Top info */}
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs font-bold text-[#F6AE0D] font-mono tracking-widest bg-[#F6AE0D]/10 px-2.5 py-1 rounded-none">
+                      {service.number}
+                    </span>
+                  </div>
 
-            {/* Service 2 */}
-            <Link 
-              href="#escola" 
-              className="py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 group hover:px-4 hover:bg-[#021422] transition-all duration-500 rounded-xl"
-            >
-              <div className="flex gap-6 items-start">
-                <span className="text-xl font-bold font-mono text-[#F6AE0D] tracking-wider pt-1">
-                  02 /
-                </span>
-                <div className="space-y-2">
-                  <h3 className="text-xl sm:text-2xl font-black text-[#021422] group-hover:text-white transition-colors duration-300 font-title">
-                    {t("Services.card2Title")}
-                  </h3>
-                  <p className="text-sm text-gray-500 group-hover:text-gray-300 transition-colors duration-300 font-light max-w-xl">
-                    {t("Services.card2Desc")}
-                  </p>
+                  {/* Title and description */}
+                  <div className="space-y-2">
+                    <h3 className="text-xl sm:text-2xl font-black text-[#021422] font-title leading-tight">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 font-light leading-relaxed">
+                      {service.desc}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 self-end sm:self-center shrink-0">
-                <span className="text-xs font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">
-                  {t("Services.card2Footer")}
-                </span>
-                <div className="w-10 h-10 rounded-full border border-gray-200 group-hover:border-white/30 flex items-center justify-center text-[#021422] group-hover:text-white transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" weight="bold" />
-                </div>
-              </div>
-            </Link>
 
-            {/* Service 3 */}
-            <Link 
-              href="https://instagram.com/thiagooficinaescola" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 group hover:px-4 hover:bg-[#021422] transition-all duration-500 rounded-xl"
-            >
-              <div className="flex gap-6 items-start">
-                <span className="text-xl font-bold font-mono text-[#F6AE0D] tracking-wider pt-1">
-                  03 /
-                </span>
-                <div className="space-y-2">
-                  <h3 className="text-xl sm:text-2xl font-black text-[#021422] group-hover:text-white transition-colors duration-300 font-title">
-                    {t("Services.card3Title")}
-                  </h3>
-                  <p className="text-sm text-gray-500 group-hover:text-gray-300 transition-colors duration-300 font-light max-w-xl">
-                    {t("Services.card3Desc")}
-                  </p>
+                {/* Footer link/badge and arrow */}
+                <div className="relative z-10 pt-6 border-t border-gray-50 flex justify-between items-center mt-6">
+                  <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                    {service.footer}
+                  </span>
+                  <div className="w-9 h-9 rounded-none border border-gray-100 flex items-center justify-center text-[#021422] transition-transform duration-300 group-hover:translate-x-1">
+                    <ArrowUpRight className="w-4 h-4" weight="bold" />
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 self-end sm:self-center shrink-0">
-                <span className="text-xs font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">
-                  {t("Services.card3Footer")}
-                </span>
-                <div className="w-10 h-10 rounded-full border border-gray-200 group-hover:border-white/30 flex items-center justify-center text-[#021422] group-hover:text-white transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" weight="bold" />
-                </div>
-              </div>
-            </Link>
-
-          </div>
-
+              </Link>
+            );
+          })}
         </div>
 
       </div>

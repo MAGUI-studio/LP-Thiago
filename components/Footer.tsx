@@ -46,7 +46,7 @@ export default function Footer() {
                 href="https://www.instagram.com/thiagooficinaescola" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
+                className="w-10 h-10 rounded-none border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
               >
                 <InstagramLogo className="w-5 h-5" weight="bold" />
               </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
                 href="https://www.tiktok.com/@thiago.mecanico" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
+                className="w-10 h-10 rounded-none border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
               >
                 <TiktokLogo className="w-5 h-5" weight="bold" />
               </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
                 href="https://www.youtube.com/@ThiagoMecanico" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
+                className="w-10 h-10 rounded-none border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
               >
                 <YoutubeLogo className="w-5 h-5" weight="bold" />
               </Link>

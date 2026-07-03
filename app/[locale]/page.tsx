@@ -3,6 +3,7 @@ import ScrollSpy from "@/components/ScrollSpy";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
+import Team from "@/components/Team";
 import Services from "@/components/Services";
 import School from "@/components/School";
 import Raffle from "@/components/Raffle";
@@ -23,8 +24,9 @@ export default function Home() {
       <About />
       <Services />
       <School />
-      <Raffle />
       <Partners />
+      <Raffle />
+      <Team />
       <WorkspaceGallery />
       <Testimonials />
       <FAQ />

@@ -2,73 +2,79 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { ShieldCheck, Wrench, Globe } from "@phosphor-icons/react";
 
 export default function About() {
   const t = useTranslations();
 
   return (
-    <section id={t("Header.anchorAbout")} className="relative w-full overflow-hidden bg-[#FDFDFD] border-b border-gray-100">
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-[600px] lg:min-h-[680px]">
-        
-        {/* Left Column: Full height split screen photo of Thiago */}
-        <div className="relative w-full h-[400px] lg:h-auto min-h-[400px] bg-[#021422]">
-          <Image 
-            src="/thiago.png" 
-            alt="Marcos Thiago Bustamante" 
-            fill
-            className="object-cover object-center"
-            priority
-          />
-        </div>
-
-        {/* Right Column: Profile Content */}
-        <div className="px-6 py-16 sm:px-12 lg:px-20 flex flex-col justify-center bg-[#FDFDFD] text-[#021422]">
-          <div className="space-y-8 max-w-xl">
-            
+    <section id={t("Header.anchorAbout")} className="w-full bg-white py-24 px-6 sm:px-12 lg:px-20 text-[#021422] font-sans">
+      <div className="w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Side: Content & Features */}
+          <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
-              <span className="text-xs font-bold text-[#F6AE0D] tracking-[0.2em] uppercase block">
-                {t("About.badge")}
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black text-[#021422] tracking-tight leading-none font-title">
+              <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
+                <span className="text-[11px] font-bold text-[#021422]/70 tracking-wider uppercase">
+                  {t("About.badge")}
+                </span>
+              </div>
+              <h2 className="text-4xl sm:text-5xl font-black tracking-tight leading-none font-title text-[#021422]">
                 {t("About.title")}
               </h2>
-              <div className="w-16 h-1.5 bg-[#F6AE0D] rounded-full"></div>
             </div>
 
-            <div className="space-y-6">
-              <p className="text-lg sm:text-xl font-bold leading-relaxed opacity-95 text-[#021422]">
+            <div className="space-y-6 text-gray-600 font-light text-base sm:text-lg leading-relaxed">
+              <p className="font-medium text-[#021422] text-lg sm:text-xl leading-relaxed">
                 {t("About.paragraph1")}
               </p>
-              <p className="text-gray-600 font-light text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-500">
                 {t("About.paragraph2")}
               </p>
             </div>
 
-            {/* Clean Specifications List */}
-            <div className="border-t border-gray-100 divide-y divide-gray-100 text-sm pt-4">
-              <div className="py-3.5 flex items-center gap-4 hover:translate-x-2 transition-transform duration-300">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#F6AE0D] shrink-0"></span>
-                <span className="text-[#021422] font-bold">
+            {/* Feature Cards Redesign (Straight Borders, Watermark Icons) */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div className="relative p-6 bg-white border border-gray-100 rounded-none min-h-[140px] flex flex-col justify-end overflow-hidden group">
+                <ShieldCheck className="absolute -right-6 -bottom-6 w-28 h-28 text-gray-100 opacity-40 pointer-events-none z-0" />
+                <p className="relative z-10 text-sm font-bold text-[#021422] leading-snug">
                   {t("About.bullet1")}
-                </span>
+                </p>
               </div>
-              <div className="py-3.5 flex items-center gap-4 hover:translate-x-2 transition-transform duration-300">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#F6AE0D] shrink-0"></span>
-                <span className="text-[#021422] font-bold">
+
+              <div className="relative p-6 bg-white border border-gray-100 rounded-none min-h-[140px] flex flex-col justify-end overflow-hidden group">
+                <Wrench className="absolute -right-6 -bottom-6 w-28 h-28 text-gray-100 opacity-40 pointer-events-none z-0" />
+                <p className="relative z-10 text-sm font-bold text-[#021422] leading-snug">
                   {t("About.bullet2")}
-                </span>
+                </p>
               </div>
-              <div className="py-3.5 flex items-center gap-4 hover:translate-x-2 transition-transform duration-300">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#F6AE0D] shrink-0"></span>
-                <span className="text-[#021422] font-bold">
+
+              <div className="relative p-6 bg-white border border-gray-100 rounded-none min-h-[140px] flex flex-col justify-end overflow-hidden group">
+                <Globe className="absolute -right-6 -bottom-6 w-28 h-28 text-gray-100 opacity-40 pointer-events-none z-0" />
+                <p className="relative z-10 text-sm font-bold text-[#021422] leading-snug">
                   {t("About.bullet3")}
-                </span>
+                </p>
               </div>
             </div>
-
           </div>
-        </div>
 
+          {/* Right Side: Framed Image Showcase (Straight Borders) */}
+          <div className="lg:col-span-5 flex justify-center w-full">
+            <div className="relative w-full max-w-md aspect-[4/5] rounded-none overflow-hidden border border-gray-100 p-2 bg-white">
+              <div className="relative w-full h-full rounded-none overflow-hidden bg-gray-50">
+                <Image 
+                  src="/thiago.png" 
+                  alt="Marcos Thiago Bustamante" 
+                  fill
+                  className="object-cover object-center hover:scale-105 transition-transform duration-700"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   );

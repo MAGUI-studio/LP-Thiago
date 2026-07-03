@@ -24,11 +24,8 @@ export default function Raffle() {
   };
 
   return (
-    <section id="rifa" className="py-24 bg-[#FDFDFD] border-b border-gray-100 text-[#021422] font-sans relative overflow-hidden">
+    <section id="rifa" className="py-24 bg-white text-[#021422] font-sans relative overflow-hidden">
       
-      {/* Background radial highlight */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#F6AE0D]/5 rounded-full blur-[120px] pointer-events-none"></div>
-
       <div className="w-full px-6 sm:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           

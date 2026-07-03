@@ -20,8 +20,8 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-white border-b border-gray-100 font-sans">
-      <div className="w-full px-6 sm:px-12 lg:px-20 max-w-4xl mx-auto space-y-12">
+    <section id="faq" className="py-24 bg-white border-b border-gray-100 font-sans w-full">
+      <div className="w-full px-6 sm:px-12 lg:px-20 space-y-12">
         
         {/* Title */}
         <div className="text-center space-y-4">
@@ -31,7 +31,7 @@ export default function FAQ() {
           <p className="text-gray-500 font-light text-sm sm:text-base leading-relaxed">
             {t("FAQ.description")}
           </p>
-          <div className="w-16 h-1 bg-[#F6AE0D] mx-auto rounded-full"></div>
+          <div className="w-16 h-1 bg-[#F6AE0D] mx-auto rounded-none"></div>
         </div>
 
         {/* Accordion List */}
@@ -45,7 +45,7 @@ export default function FAQ() {
                   className="w-full flex justify-between items-center text-left text-[#021422] font-bold text-sm sm:text-base hover:text-[#F6AE0D] transition-colors focus:outline-none py-2"
                 >
                   <span className="font-title leading-snug">{item.q}</span>
-                  <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center shrink-0 ml-4">
+                  <div className="w-8 h-8 rounded-none border border-gray-100 bg-gray-50 flex items-center justify-center shrink-0 ml-4">
                     {isOpen ? (
                       <Minus className="w-4 h-4 text-[#021422]" weight="bold" />
                     ) : (

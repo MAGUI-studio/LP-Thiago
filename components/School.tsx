@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
-import { CaretLeft, CaretRight, ArrowRight } from "@phosphor-icons/react";
+import { CaretLeft, CaretRight, ArrowRight, GraduationCap } from "@phosphor-icons/react";
 import { Link as LocaleLink } from "@/i18n/routing";
 import Link from "next/link";
 import { coursesData } from "@/data/courses";
@@ -50,35 +50,32 @@ export default function School() {
     .slice(0, 5);
 
   return (
-    <section id={t("Header.anchorSchool")} className="py-24 bg-gradient-to-b from-[#FDFDFD] to-gray-50/30 text-[#021422] relative overflow-hidden font-sans border-b border-gray-100">
+    <section id={t("Header.anchorSchool")} className="py-24 bg-white text-[#021422] relative overflow-hidden font-sans">
       
-      {/* Dynamic Background Accents */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[#F6AE0D]/3 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-12 left-10 w-[300px] h-[300px] bg-[#021422]/2 rounded-full blur-[90px] pointer-events-none"></div>
-
       <div className="w-full px-6 sm:px-12 lg:px-20 relative z-10 space-y-16">
         
         {/* Header Block (Centered & Refined) */}
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          <span className="text-[11px] font-bold text-[#F6AE0D] tracking-[0.25em] uppercase block">
-            {t("School.badge")}
-          </span>
+          <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
+            <span className="text-[11px] font-bold text-[#F6AE0D] tracking-[0.25em] uppercase block">
+              {t("School.badge")}
+            </span>
+          </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight leading-none font-title text-[#021422]">
             {t("School.title")}
           </h2>
           <p className="text-gray-500 font-light text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
             {t("School.description")}
           </p>
-          <div className="w-12 h-1 bg-[#F6AE0D] mx-auto rounded-full mt-2"></div>
         </div>
 
         {/* Carousel Area */}
         <div className="relative group/carousel">
           
-          {/* Floating Navigation Controls */}
+          {/* Floating Navigation Controls (Straight Borders) */}
           <button 
             onClick={() => scroll("left")}
-            className="absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-md flex items-center justify-center text-[#021422] hover:bg-[#021422] hover:text-white transition-all z-30 opacity-0 group-hover/carousel:opacity-100 cursor-pointer duration-300"
+            className="absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-gray-200 shadow-md flex items-center justify-center text-[#021422] hover:bg-gray-50 transition-colors z-30 opacity-0 group-hover/carousel:opacity-100 cursor-pointer duration-300 rounded-none"
             aria-label="Rolar para esquerda"
           >
             <CaretLeft className="w-5 h-5" weight="bold" />
@@ -86,7 +83,7 @@ export default function School() {
           
           <button 
             onClick={() => scroll("right")}
-            className="absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-md flex items-center justify-center text-[#021422] hover:bg-[#021422] hover:text-white transition-all z-30 opacity-0 group-hover/carousel:opacity-100 cursor-pointer duration-300"
+            className="absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-gray-200 shadow-md flex items-center justify-center text-[#021422] hover:bg-gray-50 transition-colors z-30 opacity-0 group-hover/carousel:opacity-100 cursor-pointer duration-300 rounded-none"
             aria-label="Rolar para direita"
           >
             <CaretRight className="w-5 h-5" weight="bold" />
@@ -101,21 +98,23 @@ export default function School() {
             {courses.map((course, index) => (
               <div 
                 key={index}
-                className="snap-start shrink-0 w-[290px] sm:w-[330px] bg-white border border-gray-100 hover:border-[#F6AE0D]/30 transition-all duration-300 p-8 rounded-2xl flex flex-col justify-between h-[210px] shadow-sm hover:shadow-lg hover:-translate-y-1"
+                className="relative snap-start shrink-0 w-[290px] sm:w-[330px] bg-white border border-gray-100 p-8 flex flex-col justify-between h-[210px] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 rounded-none overflow-hidden group/card"
               >
-                <div className="space-y-3.5">
+                {/* Watermark Icon */}
+                <GraduationCap className="absolute -right-6 -bottom-6 w-32 h-32 text-gray-100 opacity-40 pointer-events-none z-0" />
+                
+                <div className="relative z-10 space-y-3.5">
                   <div className="flex justify-between items-center">
                     <span className="text-[10px] font-bold text-gray-300 font-mono tracking-widest">
                       {(index + 1).toString().padStart(2, "0")} /
                     </span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#F6AE0D]"></span>
                   </div>
                   <h3 className="text-base sm:text-lg font-extrabold text-[#021422] tracking-tight leading-snug font-title line-clamp-2">
                     {course.name}
                   </h3>
                 </div>
 
-                <div className="pt-4 border-t border-gray-100 flex justify-between items-center">
+                <div className="relative z-10 pt-4 border-t border-gray-100 flex justify-between items-center">
                   <Link 
                     href={course.link}
                     target="_blank"
@@ -124,7 +123,7 @@ export default function School() {
                   >
                     {t("School.buyCourse")}
                   </Link>
-                  <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-[#F6AE0D] transition-colors" weight="bold" />
+                  <ArrowRight className="w-4 h-4 text-gray-300 transition-transform group-hover/card:translate-x-1" weight="bold" />
                 </div>
               </div>
             ))}
