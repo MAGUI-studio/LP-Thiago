@@ -25,11 +25,11 @@ export default function Home() {
       <About />
       <School />
       <Partners />
-      <Raffle />
       <Team />
       <WorkspaceGallery />
       <Testimonials />
       <FAQ />
+      <Raffle />
       <ContactMap />
       <Footer />
     </div>
