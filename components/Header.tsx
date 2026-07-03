@@ -26,7 +26,7 @@ const changeLocale = (newLocale: string, cleanPath: string) => {
   }
 };
 
-export default function Header() {
+export default function Header({ transparent = false }: { transparent?: boolean }) {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
@@ -102,6 +102,339 @@ export default function Header() {
       }
     }
   };
+
+  if (transparent) {
+    return (
+      <>
+        <div
+          id="inicio"
+          className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10 w-full"
+        >
+          <span className="font-title text-sm sm:text-xs leading-snug">
+            {t("Header.bannerText")}
+          </span>
+
+          <Link
+            href="https://pay.hotmart.com/E106476498D?off=t79ctl2r&bid=1782556961286"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" group inline-flex w-full md:w-fit bg-white text-[#021422] font-black px-6 py-3 rounded-none hover:bg-[#F6AE0D] items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300"
+          >
+            {t("Header.bannerCTA")}
+            <ArrowUpRight
+              className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              weight="bold"
+            />
+          </Link>
+        </div>
+
+        <header className="relative w-full bg-transparent border-none text-white z-50">
+          <div className="w-full px-6 sm:px-12 lg:px-20 h-24 flex items-center justify-between">
+          <Link href="/" className="relative w-24 h-12 flex items-center">
+            <Image
+              src="/logo.webp"
+              alt="Thiago Mecânico Logo"
+              width={96}
+              height={48}
+              className="object-contain"
+              priority
+            />
+          </Link>
+
+          <nav className="hidden lg:flex items-center gap-8 text-[11px] font-bold uppercase tracking-widest text-white/80">
+            <Link
+              href={aboutHref}
+              onClick={(e) => handleScroll(e, anchorAbout)}
+              className="hover:text-[#F6AE0D] transition-colors"
+            >
+              {t("Header.about")}
+            </Link>
+            <Link
+              href={servicesHref}
+              onClick={(e) => handleScroll(e, anchorServices)}
+              className="hover:text-[#F6AE0D] transition-colors"
+            >
+              {t("Header.services")}
+            </Link>
+            <Link
+              href={schoolHref}
+              onClick={(e) => handleScroll(e, anchorSchool)}
+              className="hover:text-[#F6AE0D] transition-colors"
+            >
+              {t("Header.school")}
+            </Link>
+            <Link
+              href={structureHref}
+              onClick={(e) => handleScroll(e, anchorStructure)}
+              className="hover:text-[#F6AE0D] transition-colors"
+            >
+              {t("Header.structure")}
+            </Link>
+            <Link
+              href={raffleHref}
+              onClick={(e) => handleScroll(e, anchorRaffle)}
+              className="hover:text-[#F6AE0D] transition-colors"
+            >
+              {t("Header.raffle")}
+            </Link>
+            <Link
+              href={contactHref}
+              onClick={(e) => handleScroll(e, anchorContact)}
+              className="hover:text-[#F6AE0D] transition-colors"
+            >
+              {t("Header.contact")}
+            </Link>
+          </nav>
+
+          <div className="flex items-center gap-6">
+            <div className="relative hidden md:block" ref={dropdownRef}>
+              <button
+                onClick={() => setIsDesktopDropdownOpen(!isDesktopDropdownOpen)}
+                className="p-1 hover:scale-110 transition-transform duration-300 cursor-pointer select-none flex items-center justify-center"
+                aria-haspopup="listbox"
+                aria-expanded={isDesktopDropdownOpen}
+              >
+                <Image
+                  src={`/idiomas/${locale}.webp`}
+                  alt={getLocaleName(locale)}
+                  width={24}
+                  height={16}
+                  className="object-contain rounded-[2px]"
+                />
+              </button>
+
+              {isDesktopDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 z-50 w-[32px] flex flex-col items-center gap-2 justify-center origin-top-right animate-fade-in transition-all">
+                  {["pt", "en", "es"].map((loc) => {
+                    if (loc === locale) return null;
+                    return (
+                      <button
+                        key={loc}
+                        onClick={() => {
+                          handleLocaleChange(loc);
+                          setIsDesktopDropdownOpen(false);
+                        }}
+                        className="p-0.5 hover:scale-110 transition-transform duration-200 cursor-pointer"
+                      >
+                        <Image
+                          src={`/idiomas/${loc}.webp`}
+                          alt={getLocaleName(loc)}
+                          width={24}
+                          height={16}
+                          className="object-contain rounded-[2px]"
+                        />
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="https://instagram.com/thiagooficinaescola"
+              target="_blank"
+              className="hidden lg:inline-flex bg-white/10 hover:bg-white hover:text-black border border-white/10 text-white font-bold px-6 py-2.5 rounded-full text-xs uppercase tracking-wider transition-all duration-300"
+            >
+              {t("Hero.ctaSchedule")}
+            </Link>
+
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              className="lg:hidden w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+              aria-label={t("Header.openMenu")}
+            >
+              <List className="w-5 h-5" weight="bold" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile menu container */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-50 overflow-hidden lg:hidden">
+            <div
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="absolute inset-0 bg-[#021422]/70 backdrop-blur-md transition-opacity duration-300 animate-fade-in"
+            ></div>
+
+            <div className="absolute right-0 top-0 bottom-0 w-[300px] bg-[#021422]/95 border-l border-white/10 p-8 flex flex-col justify-between shadow-2xl animate-slide-in-right">
+              <div className="space-y-8">
+                <div className="flex items-center justify-between border-b border-white/10 pb-5">
+                  <div className="relative w-24 h-14">
+                    <Image
+                      src="/logo.webp"
+                      alt="Logo"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <button
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+                    aria-label={t("Header.closeMenu")}
+                  >
+                    <X className="w-5 h-5" weight="bold" />
+                  </button>
+                </div>
+
+                <nav className="flex flex-col gap-2 font-black uppercase tracking-wider font-title text-base">
+                  <Link
+                    href={aboutHref}
+                    onClick={(e) => handleScroll(e, anchorAbout)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
+                  >
+                    <span>{t("Header.about")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      01/
+                    </span>
+                  </Link>
+                  <Link
+                    href={servicesHref}
+                    onClick={(e) => handleScroll(e, anchorServices)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
+                  >
+                    <span>{t("Header.services")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      02/
+                    </span>
+                  </Link>
+                  <Link
+                    href={schoolHref}
+                    onClick={(e) => handleScroll(e, anchorSchool)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
+                  >
+                    <span>{t("Header.school")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      03/
+                    </span>
+                  </Link>
+                  <Link
+                    href={structureHref}
+                    onClick={(e) => handleScroll(e, anchorStructure)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
+                  >
+                    <span>{t("Header.structure")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      04/
+                    </span>
+                  </Link>
+                  <Link
+                    href={raffleHref}
+                    onClick={(e) => handleScroll(e, anchorRaffle)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 border-b border-white/5 transition-colors group"
+                  >
+                    <span>{t("Header.raffle")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      05/
+                    </span>
+                  </Link>
+                  <Link
+                    href={contactHref}
+                    onClick={(e) => handleScroll(e, anchorContact)}
+                    className="text-gray-300 hover:text-[#F6AE0D] flex items-center justify-between py-3.5 transition-colors group"
+                  >
+                    <span>{t("Header.contact")}</span>
+                    <span className="text-xs text-[#F6AE0D] opacity-0 group-hover:opacity-100 transition-opacity">
+                      06/
+                    </span>
+                  </Link>
+                </nav>
+              </div>
+
+              <div className="space-y-6 border-t border-white/10 pt-6">
+                <div className="flex flex-col gap-2">
+                  <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest block mb-1">
+                    Idioma
+                  </span>
+
+                  <div className="relative w-full">
+                    <button
+                      onClick={() =>
+                        setIsMobileDropdownOpen(!isMobileDropdownOpen)
+                      }
+                      className="w-full flex items-center justify-between bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white hover:bg-white/10 transition-colors"
+                    >
+                      <div className="flex items-center gap-3">
+                        <Image
+                          src={`/idiomas/${locale}.webp`}
+                          alt={getLocaleName(locale)}
+                          width={24}
+                          height={16}
+                          className="object-contain rounded-[2px]"
+                        />
+                        <span className="font-semibold">
+                          {getLocaleName(locale)}
+                        </span>
+                      </div>
+                      <CaretDown
+                        className={`w-4 h-4 text-white/60 transition-transform ${
+                          isMobileDropdownOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    {isMobileDropdownOpen && (
+                      <div className="absolute left-0 right-0 bottom-full mb-2 bg-[#021422] border border-white/10 rounded-xl overflow-hidden shadow-xl z-50">
+                        {["pt", "en", "es"].map((loc) => {
+                          if (loc === locale) return null;
+                          return (
+                            <button
+                              key={loc}
+                              onClick={() => {
+                                handleLocaleChange(loc);
+                                setIsMobileDropdownOpen(false);
+                                setIsMobileMenuOpen(false);
+                              }}
+                              className="w-full flex items-center gap-3 px-4 py-3 hover:bg-white/5 text-sm text-left transition-colors text-white"
+                            >
+                              <Image
+                                src={`/idiomas/${loc}.webp`}
+                                alt={getLocaleName(loc)}
+                                width={24}
+                                height={16}
+                                className="object-contain rounded-[2px]"
+                              />
+                              <span className="font-semibold">
+                                {getLocaleName(loc)}
+                              </span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 justify-center border-t border-white/5 pt-6">
+                  <Link
+                    href="https://www.instagram.com/thiagooficinaescola"
+                    target="_blank"
+                    className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+                  >
+                    <InstagramLogo className="w-5 h-5" />
+                  </Link>
+                  <Link
+                    href="https://www.tiktok.com/@thiago.mecanico"
+                    target="_blank"
+                    className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+                  >
+                    <TiktokLogo className="w-5 h-5" />
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/@ThiagoMecanico"
+                    target="_blank"
+                    className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
+                  >
+                    <YoutubeLogo className="w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </header>
+    </>
+  );
+}
 
   return (
     <>

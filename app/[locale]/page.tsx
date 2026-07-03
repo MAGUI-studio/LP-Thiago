@@ -19,7 +19,6 @@ const ContactMap = dynamic(() => import("@/components/ContactMap"));
 export default function Home() {
   return (
     <div className="bg-[#FDFDFD] text-[#021422] font-sans antialiased min-h-screen flex flex-col selection:bg-[#F6AE0D] selection:text-[#021422]">
-      <Header />
       <ScrollSpy />
       <Hero />
       <Stats />
