@@ -16,7 +16,7 @@ export default function ScrollSpy() {
 
     const observerOptions = {
       root: null,
-      rootMargin: "-40% 0px -40% 0px", // Triggers when the section occupies a solid middle portion of viewport
+      rootMargin: "-40% 0px -40% 0px", 
       threshold: 0,
     };
 
@@ -25,7 +25,7 @@ export default function ScrollSpy() {
         if (entry.isIntersecting) {
           const id = entry.target.id;
           if (id) {
-            // Update URL hash using replaceState to prevent pushing duplicate history items
+            
             window.history.replaceState(null, "", `#${id}`);
           }
         }

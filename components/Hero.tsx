@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Check, ArrowUpRight, X } from "@phosphor-icons/react";
+import { Check, ArrowUpRight } from "@phosphor-icons/react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-[#021422] border-b border-gray-200">
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-[600px] lg:min-h-[700px]">
-        {/* Left Column: Dark blue content box */}
+        
         <div className="bg-[#021422] px-6 py-16 sm:px-12 lg:px-20 flex flex-col justify-between text-white relative">
           <div className="space-y-6 max-w-xl my-auto relative z-10">
             <span className="text-xs font-bold text-gray-400 uppercase tracking-widest block">
@@ -43,7 +43,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Pillars Row */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 mt-12 border-t border-white/10 text-xs text-gray-300 max-w-2xl relative z-10">
             <div className="flex items-center gap-2">
               <Check className="w-3.5 h-3.5 text-[#F6AE0D]" weight="bold" />
@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column: Hero image with diagonal Clip-path */}
+        
         <div className="relative w-full h-[400px] lg:h-auto min-h-[400px] overflow-hidden bg-gray-900 [clip-path:polygon(0_8%,100%_0,100%_100%,0_100%)] lg:[clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)]">
           <Image
             src="/hero.png"

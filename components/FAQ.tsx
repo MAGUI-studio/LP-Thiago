@@ -23,7 +23,7 @@ export default function FAQ() {
     <section id="faq" className="py-24 bg-white border-b border-gray-100 font-sans w-full">
       <div className="w-full px-6 sm:px-12 lg:px-20 space-y-12">
         
-        {/* Title */}
+        
         <div className="text-center space-y-4">
           <h2 className="text-3xl sm:text-5xl font-black text-[#021422] tracking-tight font-title">
             {t("FAQ.title")}
@@ -34,7 +34,7 @@ export default function FAQ() {
           <div className="w-16 h-1 bg-[#F6AE0D] mx-auto rounded-none"></div>
         </div>
 
-        {/* Accordion List */}
+        
         <div className="border-t border-gray-100 divide-y divide-gray-100">
           {faqItems.map((item, index) => {
             const isOpen = openIndex === index;

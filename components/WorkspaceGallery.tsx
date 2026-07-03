@@ -17,7 +17,7 @@ export default function WorkspaceGallery() {
     <section id="estrutura" className="py-24 bg-white border-b border-gray-100 font-sans text-[#021422]">
       <div className="w-full px-6 sm:px-12 lg:px-20 space-y-12">
         
-        {/* Title Header */}
+        
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div className="space-y-4 max-w-2xl">
             <span className="text-xs font-bold text-[#F6AE0D] tracking-[0.2em] uppercase block">
@@ -33,7 +33,7 @@ export default function WorkspaceGallery() {
           <div className="w-20 h-1.5 bg-[#F6AE0D] shrink-0"></div>
         </div>
 
-        {/* Asymmetric Gallery Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
           {items.map((item, index) => (
             <div 
@@ -46,7 +46,7 @@ export default function WorkspaceGallery() {
                 fill 
                 className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
               />
-              {/* Overlay on hover */}
+              
               <div className="absolute inset-0 bg-gradient-to-t from-[#021422]/90 via-[#021422]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
                 <span className="text-[10px] font-bold text-[#F6AE0D] tracking-wider font-mono">
                   {item.tag}

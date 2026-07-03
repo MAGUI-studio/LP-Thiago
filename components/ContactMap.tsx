@@ -13,7 +13,7 @@ export default function ContactMap() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-stretch">
           
-          {/* Left Column: Opening hours & details */}
+          
           <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
             <div className="space-y-6">
               <span className="text-xs font-bold text-[#F6AE0D] tracking-[0.2em] uppercase block">
@@ -28,10 +28,10 @@ export default function ContactMap() {
               <div className="w-16 h-1.5 bg-[#F6AE0D] rounded-none"></div>
             </div>
 
-            {/* Info blocks */}
+            
             <div className="space-y-6">
               
-              {/* Address detail */}
+              
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-none bg-[#021422]/5 flex items-center justify-center text-[#F6AE0D] shrink-0 mt-1">
                   <MapPin className="w-5 h-5" weight="fill" />
@@ -46,7 +46,7 @@ export default function ContactMap() {
                 </div>
               </div>
 
-              {/* Working Hours detail */}
+              
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-none bg-[#021422]/5 flex items-center justify-center text-[#F6AE0D] shrink-0 mt-1">
                   <Clock className="w-5 h-5" weight="fill" />
@@ -70,7 +70,7 @@ export default function ContactMap() {
 
             </div>
 
-            {/* Action CTA */}
+            
             <div className="pt-2">
               <Link 
                 href="https://instagram.com/thiagooficinaescola" 
@@ -84,7 +84,7 @@ export default function ContactMap() {
             </div>
           </div>
 
-          {/* Right Column: Google Maps Embed Viewport (Straight Borders, No Grayscale) */}
+          
           <div className="lg:col-span-7 relative h-[380px] lg:h-auto min-h-[380px] rounded-none overflow-hidden border border-gray-200 shadow-lg">
             <iframe 
               src="https://maps.google.com/maps?q=THIAGO%20OFICINA%20ESCOLA,%20Av.%20Dep.%20Benedito%20Matarazzo,%205101&t=&z=16&ie=UTF8&iwloc=&output=embed"

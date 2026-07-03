@@ -41,7 +41,7 @@ export default function Services() {
     <section id={t("Header.anchorServices")} className="py-24 bg-white text-[#021422] font-sans w-full">
       <div className="w-full px-6 sm:px-12 lg:px-20 space-y-16">
         
-        {/* Header */}
+        
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-gray-100">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
@@ -58,7 +58,7 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Grid of Cards (Straight Borders, Watermark Icons) */}
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicesData.map((service, index) => {
             const Icon = service.icon;
@@ -72,18 +72,18 @@ export default function Services() {
                 rel={isExternal ? "noopener noreferrer" : undefined}
                 className="group relative bg-white border border-gray-100 p-8 flex flex-col justify-between min-h-[320px] overflow-hidden rounded-none hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
-                {/* Watermark Icon */}
+                
                 <Icon className="absolute -right-8 -bottom-8 w-44 h-44 text-gray-100 opacity-40 pointer-events-none z-0" />
                 
                 <div className="relative z-10 space-y-6">
-                  {/* Top info */}
+                  
                   <div className="flex justify-between items-center">
                     <span className="text-xs font-bold text-[#F6AE0D] font-mono tracking-widest bg-[#F6AE0D]/10 px-2.5 py-1 rounded-none">
                       {service.number}
                     </span>
                   </div>
 
-                  {/* Title and description */}
+                  
                   <div className="space-y-2">
                     <h3 className="text-xl sm:text-2xl font-black text-[#021422] font-title leading-tight">
                       {service.title}
@@ -94,7 +94,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* Footer link/badge and arrow */}
+                
                 <div className="relative z-10 pt-6 border-t border-gray-50 flex justify-between items-center mt-6">
                   <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
                     {service.footer}

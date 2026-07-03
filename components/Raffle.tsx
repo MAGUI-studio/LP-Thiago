@@ -29,11 +29,11 @@ export default function Raffle() {
       <div className="w-full px-6 sm:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           
-          {/* Left Column: Image Carousel (Transparent, No background, No cards) */}
+          
           <div className="lg:col-span-6 space-y-4">
             <div className="relative aspect-[4/3] w-full group select-none">
               
-              {/* Carousel Track */}
+              
               <div className="relative w-full h-full">
                 <Image
                   src={images[activeIndex]}
@@ -44,7 +44,7 @@ export default function Raffle() {
                 />
               </div>
 
-              {/* Navigation Arrows */}
+              
               <button
                 onClick={handlePrev}
                 className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 border border-gray-200/50 flex items-center justify-center text-[#021422] hover:bg-[#021422] hover:text-white transition-all shadow-sm z-20"
@@ -60,7 +60,7 @@ export default function Raffle() {
                 <CaretRight className="w-5 h-5" weight="bold" />
               </button>
 
-              {/* Index Dots */}
+              
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                 {images.map((_, index) => (
                   <button
@@ -77,7 +77,7 @@ export default function Raffle() {
             </div>
           </div>
 
-          {/* Right Column: Raffle Info & CTA */}
+          
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-4">
               <span className="text-xs font-bold text-[#F6AE0D] tracking-[0.2em] uppercase block">
@@ -92,7 +92,7 @@ export default function Raffle() {
               <div className="w-16 h-1.5 bg-[#F6AE0D] rounded-full"></div>
             </div>
 
-            {/* Price Info (No Background, Border Highlight) */}
+            
             <div className="border-l-4 border-[#F6AE0D] pl-6 py-2 max-w-xs">
               <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-0.5">
                 {t("Raffle.priceLabel")}
@@ -102,7 +102,7 @@ export default function Raffle() {
               </span>
             </div>
 
-            {/* Raffle Details List */}
+            
             <div className="space-y-4">
               <h4 className="font-extrabold text-sm uppercase tracking-wider text-[#021422] font-title">
                 {t("Raffle.detailsTitle")}
@@ -119,7 +119,7 @@ export default function Raffle() {
               </ul>
             </div>
 
-            {/* Action CTA */}
+            
             <div>
               <a
                 href="https://api.whatsapp.com/message/XAS6W42TZQO4N1?autoload=1&app_absent=0"

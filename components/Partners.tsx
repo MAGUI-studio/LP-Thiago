@@ -14,13 +14,13 @@ export default function Partners() {
     { src: "/marcas/gantech.png", alt: "Gantech" },
   ];
 
-  // Duplicate list to achieve a seamless loop in the marquee
+  
   const marqueeLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
     <section id="parceiros" className="py-12 bg-[#FDFDFD] border-t border-b border-gray-100 overflow-hidden w-full relative z-10 select-none">
       
-      {/* Shadow overlay to fade edges */}
+      
       <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
       <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
 

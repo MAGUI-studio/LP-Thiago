@@ -5,7 +5,7 @@ export interface Course {
 }
 
 export const coursesData: Course[] = [
-  // CURSOS EN ESPAÑOL
+  
   {
     category: "CURSOS EN ESPAÑOL",
     name: "FOX X2 ESPAÑOL",
@@ -52,7 +52,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/Q99316398G?off=lcl8g3cs&bid=1783085127774"
   },
 
-  // SUSPENSÃO ROCKSHOX
+  
   {
     category: "SUSPENSÃO ROCKSHOX",
     name: "ROCKSHOX JUDY",
@@ -104,7 +104,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/V53257270A?bid=1783085195275"
   },
 
-  // SHOCK ROCKSHOX
+  
   {
     category: "SHOCK ROCKSHOX",
     name: "DELUXE SELECT +",
@@ -126,7 +126,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/C63464707I?off=sm4eouf9&bid=1783085247685"
   },
 
-  // SUSPENSÃO FOX
+  
   {
     category: "SUSPENSÃO FOX",
     name: "FOX FACTORY SERIES FIT",
@@ -148,7 +148,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/L53330318C?off=06nnu45c&bid=1783085269050"
   },
 
-  // SHOCK FOX
+  
   {
     category: "SHOCK FOX",
     name: "FOX ISOSTRUT",
@@ -165,7 +165,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/Q53268040N?off=2edwuqq9&bid=1783085288366"
   },
 
-  // PACOTE AULAS
+  
   {
     category: "PACOTE AULAS",
     name: "SANGRIA E REVISÃO DE FREIOS HIDRÁULICOS SHIMANO / SRAM / MAGURA",
@@ -187,7 +187,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/C55084351M?bid=1783085308216"
   },
 
-  // LEFTY
+  
   {
     category: "LEFTY",
     name: "LEFTY OCHO",
@@ -204,7 +204,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/F56807065O?off=ykpjl2pk&bid=1783085326634"
   },
 
-  // REVISÃO DE BIKE
+  
   {
     category: "REVISÃO DE BIKE",
     name: "REVISÃO BIKE SPEED",
@@ -216,21 +216,21 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/I53259612D?bid=1783085340183"
   },
 
-  // SUSPENSÃO PROSHOCK
+  
   {
     category: "SUSPENSÃO PROSHOCK",
     name: "PROSHOCK ONIX",
     link: "https://pay.hotmart.com/W53282044J?bid=1783085349492"
   },
 
-  // SUSPENSÃO MANITOU
+  
   {
     category: "SUSPENSÃO MANITOU",
     name: "MANITOU MACHETE",
     link: "https://pay.hotmart.com/V53270747K?bid=1783085350406"
   },
 
-  // SRAM
+  
   {
     category: "SRAM",
     name: "SRAM EAGLE GX / X01 / XX1",
@@ -242,7 +242,7 @@ export const coursesData: Course[] = [
     link: "https://pay.hotmart.com/A91278625N?off=jny902lo&bid=1783085352388"
   },
 
-  // RODAS
+  
   {
     category: "RODAS",
     name: "MONTAGEM E ALINHAMENTO DE ARO",

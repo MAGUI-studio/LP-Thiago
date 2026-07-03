@@ -12,7 +12,7 @@ export default function About() {
       <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Side: Content & Features */}
+          
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
@@ -34,7 +34,7 @@ export default function About() {
               </p>
             </div>
 
-            {/* Feature Cards Redesign (Straight Borders, Watermark Icons) */}
+            
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
               <div className="relative p-6 bg-white border border-gray-100 rounded-none min-h-[140px] flex flex-col justify-end overflow-hidden group">
                 <ShieldCheck className="absolute -right-6 -bottom-6 w-28 h-28 text-gray-100 opacity-40 pointer-events-none z-0" />
@@ -59,7 +59,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right Side: Framed Image Showcase (Straight Borders) */}
+          
           <div className="lg:col-span-5 flex justify-center w-full">
             <div className="relative w-full max-w-md aspect-[4/5] rounded-none overflow-hidden border border-gray-100 p-2 bg-white">
               <div className="relative w-full h-full rounded-none overflow-hidden bg-gray-50">

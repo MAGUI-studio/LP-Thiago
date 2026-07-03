@@ -15,7 +15,7 @@ export default function CursosPage() {
     course.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Extract unique categories from the filtered list to keep dynamic categories headers
+  
   const categories = Array.from(
     new Set(filteredCourses.map((course) => course.category))
   );
@@ -24,7 +24,7 @@ export default function CursosPage() {
     <main className="bg-[#FDFDFD] min-h-screen py-20 px-6 sm:px-12 lg:px-20 font-sans text-[#021422]">
       <div className="w-full space-y-12">
         
-        {/* Back button */}
+        
         <div>
           <LocaleLink 
             href="/" 
@@ -35,7 +35,7 @@ export default function CursosPage() {
           </LocaleLink>
         </div>
 
-        {/* Heading */}
+        
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-none font-title text-[#021422]">
             {t("Cursos.title")}
@@ -46,7 +46,7 @@ export default function CursosPage() {
           <div className="w-20 h-1.5 bg-[#F6AE0D]"></div>
         </div>
 
-        {/* Search Bar (Straight Borders) */}
+        
         <div className="max-w-md relative">
           <input
             type="text"
@@ -58,7 +58,7 @@ export default function CursosPage() {
           <MagnifyingGlass className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2" />
         </div>
 
-        {/* Courses Section Separated by Category */}
+        
         {filteredCourses.length > 0 ? (
           <div className="space-y-16 w-full pt-4">
             {categories.map((category) => {
@@ -69,7 +69,7 @@ export default function CursosPage() {
               return (
                 <div key={category} className="space-y-6 w-full">
                   
-                  {/* Category Header */}
+                  
                   <div className="flex items-center gap-4">
                     <h2 className="text-lg sm:text-xl font-black tracking-wider text-[#021422] font-title uppercase">
                       {category}
@@ -80,14 +80,14 @@ export default function CursosPage() {
                     </span>
                   </div>
 
-                  {/* Category Grid (Straight Borders, Watermark Icons) */}
+                  
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full">
                     {categoryCourses.map((course, index) => (
                       <div 
                         key={index}
                         className="relative bg-white border border-gray-200/80 p-8 rounded-none flex flex-col justify-between min-h-[200px] h-full shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 overflow-hidden group"
                       >
-                        {/* Watermark Icon */}
+                        
                         <GraduationCap className="absolute -right-6 -bottom-6 w-32 h-32 text-gray-100 opacity-40 pointer-events-none z-0" />
                         
                         <div className="relative z-10 space-y-4">

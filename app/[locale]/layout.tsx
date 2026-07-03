@@ -20,13 +20,13 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
 
-  // Validate that the incoming locale is supported
+  
   const locales = ['pt', 'en', 'es'];
   if (!locales.includes(locale)) {
     notFound();
   }
 
-  // Providing all messages to the client
+  
   const messages = await getMessages();
 
   return (

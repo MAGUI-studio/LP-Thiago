@@ -44,7 +44,7 @@ export default function School() {
     }
   };
 
-  // Only show the first 5 courses that are not in Spanish
+  
   const courses = coursesData
     .filter((course) => course.category !== "CURSOS EN ESPAÑOL")
     .slice(0, 5);
@@ -54,7 +54,7 @@ export default function School() {
       
       <div className="w-full px-6 sm:px-12 lg:px-20 relative z-10 space-y-16">
         
-        {/* Header Block (Centered & Refined) */}
+        
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
             <span className="text-[11px] font-bold text-[#F6AE0D] tracking-[0.25em] uppercase block">
@@ -69,10 +69,10 @@ export default function School() {
           </p>
         </div>
 
-        {/* Carousel Area */}
+        
         <div className="relative group/carousel">
           
-          {/* Floating Navigation Controls (Straight Borders) */}
+          
           <button 
             onClick={() => scroll("left")}
             className="absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-gray-200 shadow-md flex items-center justify-center text-[#021422] hover:bg-gray-50 transition-colors z-30 opacity-0 group-hover/carousel:opacity-100 cursor-pointer duration-300 rounded-none"
@@ -89,7 +89,7 @@ export default function School() {
             <CaretRight className="w-5 h-5" weight="bold" />
           </button>
 
-          {/* Cards Track */}
+          
           <div 
             ref={scrollContainerRef}
             className="flex gap-8 overflow-x-auto scrollbar-none pb-6 snap-x snap-mandatory px-2"
@@ -100,7 +100,7 @@ export default function School() {
                 key={index}
                 className="relative snap-start shrink-0 w-[290px] sm:w-[330px] bg-white border border-gray-100 p-8 flex flex-col justify-between h-[210px] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 rounded-none overflow-hidden group/card"
               >
-                {/* Watermark Icon */}
+                
                 <GraduationCap className="absolute -right-6 -bottom-6 w-32 h-32 text-gray-100 opacity-40 pointer-events-none z-0" />
                 
                 <div className="relative z-10 space-y-3.5">
@@ -130,7 +130,7 @@ export default function School() {
           </div>
         </div>
 
-        {/* View All Text Link (Centered, Minimal, Hover Underline) */}
+        
         <div className="text-center pt-4">
           <LocaleLink 
             href="/cursos" 
@@ -139,7 +139,7 @@ export default function School() {
             <span>{t("School.viewAll")}</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" weight="bold" />
             
-            {/* Smooth sliding underline */}
+            
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#021422] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
           </LocaleLink>
         </div>

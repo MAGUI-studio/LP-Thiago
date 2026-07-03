@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#010a12] text-gray-400 py-16 border-t border-white/5 relative overflow-hidden font-sans">
       
-      {/* Huge Display Background Text (Brutalist/Premium look) */}
+      
       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none overflow-hidden h-[120px] sm:h-[160px] opacity-[0.02]">
         <span className="text-[12vw] font-black tracking-tighter leading-none text-white uppercase font-title whitespace-nowrap block">
           THIAGO MECÂNICO
@@ -21,10 +21,10 @@ export default function Footer() {
 
       <div className="w-full px-6 sm:px-12 lg:px-20 relative z-10 space-y-16">
         
-        {/* Main Content Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Column 1: Brand & Profile */}
+          
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center gap-3">
               <Link href="#" className="relative w-28 h-16 flex items-center justify-center">
@@ -40,7 +40,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400 font-light leading-relaxed max-w-sm">
               {t("Footer.description")}
             </p>
-            {/* Socials */}
+            
             <div className="flex gap-3">
               <Link 
                 href="https://www.instagram.com/thiagooficinaescola" 
@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Navigation Links */}
+          
           <div className="lg:col-span-2 space-y-4">
             <h4 className="font-extrabold text-white text-xs uppercase tracking-widest font-title">
               Navegação
@@ -87,7 +87,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 3: Address & Base */}
+          
           <div className="lg:col-span-3 space-y-4">
             <h4 className="font-extrabold text-white text-xs uppercase tracking-widest font-title">
               {t("Footer.addressTitle")}
@@ -97,7 +97,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 4: Workshop Academy */}
+          
           <div className="lg:col-span-3 space-y-4">
             <h4 className="font-extrabold text-white text-xs uppercase tracking-widest font-title">
               {t("Footer.schoolTitle")}
@@ -109,7 +109,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom copyright bar */}
+        
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 font-medium">
           <p>{t("Footer.rights", { year: new Date().getFullYear() })}</p>
           

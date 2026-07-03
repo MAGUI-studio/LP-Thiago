@@ -83,7 +83,7 @@ export default function Team() {
     <section id="equipe" className="py-24 bg-white text-[#021422] font-sans w-full relative z-10">
       <div className="w-full px-6 sm:px-12 lg:px-20 space-y-16">
         
-        {/* Header Block */}
+        
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-gray-100">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-flex items-center gap-2 py-1 border-b border-[#F6AE0D] rounded-none">
@@ -100,10 +100,10 @@ export default function Team() {
           </p>
         </div>
 
-        {/* Carousel Area */}
+        
         <div className="relative group/carousel">
           
-          {/* Floating Navigation Controls (Straight Borders) */}
+          
           <button 
             onClick={() => scroll("left")}
             className="absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-gray-200 shadow-md flex items-center justify-center text-[#021422] hover:bg-gray-50 transition-colors z-30 opacity-0 group-hover/carousel:opacity-100 cursor-pointer duration-300 rounded-none"
@@ -120,7 +120,7 @@ export default function Team() {
             <CaretRight className="w-5 h-5" weight="bold" />
           </button>
 
-          {/* Members Carousel Track (Shows 3 members on large screens, snaps) */}
+          
           <div 
             ref={scrollContainerRef}
             className="flex gap-8 overflow-x-auto scrollbar-none pb-6 snap-x snap-mandatory px-2"
@@ -133,7 +133,7 @@ export default function Team() {
               >
                 <div className="space-y-6">
                   
-                  {/* Image Wrapper */}
+                  
                   <div className="relative aspect-[3/4] w-full rounded-none overflow-hidden">
                     <Image 
                       src={member.photo} 
@@ -143,7 +143,7 @@ export default function Team() {
                     />
                   </div>
 
-                  {/* Details */}
+                  
                   <div className="space-y-2 p-5">
                     <span className="text-[10px] font-bold text-[#F6AE0D] uppercase tracking-wider block">
                       {member.role}
@@ -158,7 +158,7 @@ export default function Team() {
 
                 </div>
 
-                {/* Socials */}
+                
                 <div className="pt-4 border-t border-gray-50 flex items-center justify-between mt-6 px-5 pb-5">
                   <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                     Contato
