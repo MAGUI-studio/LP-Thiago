@@ -3,13 +3,25 @@
 import { useTranslations } from "next-intl";
 import { Clock, MapPin, ArrowUpRight } from "@phosphor-icons/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ContactMap() {
   const t = useTranslations();
 
   return (
-    <section id={t("Header.anchorContact")} className="py-24 bg-[#010a12] font-sans text-gray-300">
-      <div className="w-full px-6 sm:px-12 lg:px-20">
+    <section id={t("Header.anchorContact")} className="py-24 bg-[#010a12] font-sans text-gray-300 relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-img.webp"
+          alt="Contact Background"
+          fill
+          className="object-cover object-center opacity-[0.07]"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#010a12] via-transparent to-[#010a12]/50 z-10" />
+      </div>
+
+      <div className="w-full px-6 sm:px-12 lg:px-20 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-stretch">
           
