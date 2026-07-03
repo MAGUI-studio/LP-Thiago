@@ -37,13 +37,13 @@ export default function Testimonials() {
   return (
     <section id="depoimentos" className="py-24 bg-white text-[#021422] font-sans w-full relative overflow-hidden select-none">
       
-      <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
-      <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+      <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white to-transparent z-20 pointer-events-none"></div>
+      <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white to-transparent z-20 pointer-events-none"></div>
 
       <div className="w-full space-y-16">
         
         
-        <div className="w-full px-6 sm:px-12 lg:px-20 text-center space-y-4 max-w-2xl mx-auto">
+        <div className="w-full px-6 sm:px-12 lg:px-20 text-center space-y-4 mx-auto">
           <span className="text-xs font-bold text-[#F6AE0D] tracking-[0.2em] uppercase block">
             {t("Testimonials.badge")}
           </span>
@@ -61,7 +61,7 @@ export default function Testimonials() {
             {marqueeReviews.map((review, index) => (
               <div 
                 key={index}
-                className="w-[280px] sm:w-[380px] shrink-0 bg-gray-50/40 p-8 flex flex-col justify-between space-y-6 rounded-none border-none shadow-none"
+                className="w-[280px] sm:w-[380px] shrink-0 p-8 flex flex-col justify-between space-y-6 rounded-none border-none shadow-none"
               >
                 <div className="space-y-4">
                   

@@ -97,7 +97,11 @@
     "rights": "© {year} Thiago Mecânica & Oficina Escola. Todos os direitos reservados.",
     "credits": "Desenvolvido com foco em alta performance.",
     "offeredBy": "Oferecido por",
-    "backToTop": "Voltar ao topo"
+    "backToTop": "Voltar ao topo",
+    "inPersonCourses": "Cursos Presenciais",
+    "digitalCourses": "Cursos Digitais",
+    "viewCourses": "Ver Cursos",
+    "getDirections": "Como Chegar"
   },
   "Cursos": {
     "back": "Voltar para Início",
@@ -129,7 +133,8 @@
     "hoursSundayValue": "10:00 - 18:00",
     "addressTitle": "Endereço Físico",
     "addressText": "Av. Dep. Benedito Matarazzo, 5101 - Alvorada\nSão José dos Campos - SP\nCEP: 12246-840",
-    "whatsappButton": "Chamar no WhatsApp"
+    "whatsappButton": "Chamar no WhatsApp",
+    "mapTitle": "Mapa interativo com a localização da Thiago Oficina Escola"
   },
   "Testimonials": {
     "badge": "DEPOIMENTOS",
@@ -148,7 +153,11 @@
   "WorkspaceGallery": {
     "badge": "INFRAESTRUTURA",
     "title": "Estrutura e Equipamentos",
-    "desc": "Um ambiente planejado com ferramental profissional de nível internacional para diagnósticos rápidos e precisos."
+    "desc": "Um ambiente planejado com ferramental profissional de nível internacional para diagnósticos rápidos e precisos.",
+    "tag1": "Oficina",
+    "tag2": "Ferramentas",
+    "tag3": "Suspensão",
+    "tag4": "Tecnologia"
   },
   "Raffle": {
     "badge": "RIFA EXCLUSIVA",
