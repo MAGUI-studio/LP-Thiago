@@ -7,7 +7,7 @@ export default function About() {
   const t = useTranslations();
 
   return (
-    <section id="sobre" className="relative w-full overflow-hidden bg-[#FDFDFD] border-b border-gray-100">
+    <section id={t("Header.anchorAbout")} className="relative w-full overflow-hidden bg-[#FDFDFD] border-b border-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-[600px] lg:min-h-[680px]">
         
         {/* Left Column: Full height split screen photo of Thiago */}

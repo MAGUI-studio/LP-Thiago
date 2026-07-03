@@ -1,9 +1,11 @@
 import Header from "@/components/Header";
+import ScrollSpy from "@/components/ScrollSpy";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import School from "@/components/School";
+import Raffle from "@/components/Raffle";
 import Partners from "@/components/Partners";
 import WorkspaceGallery from "@/components/WorkspaceGallery";
 import Testimonials from "@/components/Testimonials";
@@ -15,11 +17,13 @@ export default function Home() {
   return (
     <div className="bg-[#FDFDFD] text-[#021422] font-sans antialiased min-h-screen flex flex-col selection:bg-[#F6AE0D] selection:text-[#021422]">
       <Header />
+      <ScrollSpy />
       <Hero />
       <Stats />
       <About />
       <Services />
       <School />
+      <Raffle />
       <Partners />
       <WorkspaceGallery />
       <Testimonials />

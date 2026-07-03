@@ -2,12 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "@phosphor-icons/react";
+import Link from "next/link";
 
 export default function Services() {
   const t = useTranslations();
 
   return (
-    <section id="servicos" className="py-24 bg-gray-50/50 border-y border-gray-100 font-sans">
+    <section id={t("Header.anchorServices")} className="py-24 bg-gray-50/50 border-y border-gray-100 font-sans">
       <div className="w-full px-6 sm:px-12 lg:px-20">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -30,7 +31,7 @@ export default function Services() {
           <div className="lg:col-span-8 border-t border-gray-200 divide-y divide-gray-200">
             
             {/* Service 1 */}
-            <a 
+            <Link 
               href="https://instagram.com/thiagooficinaescola" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -57,10 +58,10 @@ export default function Services() {
                   <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" weight="bold" />
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Service 2 */}
-            <a 
+            <Link 
               href="#escola" 
               className="py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 group hover:px-4 hover:bg-[#021422] transition-all duration-500 rounded-xl"
             >
@@ -85,10 +86,10 @@ export default function Services() {
                   <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" weight="bold" />
                 </div>
               </div>
-            </a>
+            </Link>
 
             {/* Service 3 */}
-            <a 
+            <Link 
               href="https://instagram.com/thiagooficinaescola" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -115,7 +116,7 @@ export default function Services() {
                   <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" weight="bold" />
                 </div>
               </div>
-            </a>
+            </Link>
 
           </div>
 

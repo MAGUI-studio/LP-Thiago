@@ -12,7 +12,7 @@ export default function Stats() {
         
         {/* Cell 1 */}
         <div className="p-8 space-y-2">
-          <span className="text-5xl font-black text-[#F6AE0D] tracking-tighter block font-title">
+          <span className="text-5xl font-black text-[#021422] tracking-tighter block font-title">
             01º
           </span>
           <h4 className="font-extrabold text-[#021422] text-sm tracking-wider uppercase">
@@ -38,7 +38,7 @@ export default function Stats() {
 
         {/* Cell 3 */}
         <div className="p-8 space-y-2">
-          <span className="text-5xl font-black text-[#F6AE0D] tracking-tighter block font-title">
+          <span className="text-5xl font-black text-[#021422] tracking-tighter block font-title">
             Elite
           </span>
           <h4 className="font-extrabold text-[#021422] text-sm tracking-wider uppercase">

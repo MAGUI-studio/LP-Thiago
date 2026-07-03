@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { InstagramLogo, YoutubeLogo, FacebookLogo, ArrowUpRight } from "@phosphor-icons/react";
+import { InstagramLogo, YoutubeLogo, TiktokLogo, ArrowUpRight } from "@phosphor-icons/react";
+import Link from "next/link";
+import { ScrollTopLink } from "@/components/ScrollTopLink";
 
 export default function Footer() {
   const t = useTranslations();
@@ -25,7 +27,7 @@ export default function Footer() {
           {/* Column 1: Brand & Profile */}
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center gap-3">
-              <a href="#" className="relative w-28 h-16 flex items-center justify-center">
+              <Link href="#" className="relative w-28 h-16 flex items-center justify-center">
                 <Image 
                   src="/logo.png" 
                   alt="Thiago Mecânico Logo" 
@@ -33,37 +35,37 @@ export default function Footer() {
                   height={64} 
                   className="object-contain"
                 />
-              </a>
+              </Link>
             </div>
             <p className="text-sm text-gray-400 font-light leading-relaxed max-w-sm">
               {t("Footer.description")}
             </p>
             {/* Socials */}
             <div className="flex gap-3">
-              <a 
-                href="https://instagram.com/thiago.mecanico" 
+              <Link 
+                href="https://www.instagram.com/thiagooficinaescola" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
               >
                 <InstagramLogo className="w-5 h-5" weight="bold" />
-              </a>
-              <a 
-                href="https://youtube.com" 
+              </Link>
+              <Link 
+                href="https://www.tiktok.com/@thiago.mecanico" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
+              >
+                <TiktokLogo className="w-5 h-5" weight="bold" />
+              </Link>
+              <Link 
+                href="https://www.youtube.com/@ThiagoMecanico" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
               >
                 <YoutubeLogo className="w-5 h-5" weight="bold" />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#F6AE0D] hover:border-[#F6AE0D] hover:bg-white/5 transition-all duration-300"
-              >
-                <FacebookLogo className="w-5 h-5" weight="bold" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -73,15 +75,15 @@ export default function Footer() {
               Navegação
             </h4>
             <div className="flex flex-col gap-2.5 text-sm font-medium">
-              <a href="#sobre" className="hover:text-white transition-colors inline-flex items-center gap-1 group">
+              <Link href="#sobre" className="hover:text-white transition-colors inline-flex items-center gap-1 group">
                 Sobre <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="#servicos" className="hover:text-white transition-colors inline-flex items-center gap-1 group">
+              </Link>
+              <Link href="#servicos" className="hover:text-white transition-colors inline-flex items-center gap-1 group">
                 Serviços <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a href="#escola" className="hover:text-white transition-colors inline-flex items-center gap-1 group">
+              </Link>
+              <Link href="#escola" className="hover:text-white transition-colors inline-flex items-center gap-1 group">
                 Escola <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -110,7 +112,25 @@ export default function Footer() {
         {/* Bottom copyright bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 font-medium">
           <p>{t("Footer.rights", { year: new Date().getFullYear() })}</p>
-          <p className="hover:text-[#F6AE0D] transition-colors">{t("Footer.credits")}</p>
+          
+          <div className="flex flex-wrap items-center gap-3">
+            <span>
+              {t("Footer.offeredBy")}{" "}
+              <Link
+                href="https://magui.studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white hover:text-[#B8D9EA]"
+              >
+                <strong>MAGUI</strong>
+                <span className="text-[#B8D9EA]">.</span>studio
+              </Link>
+            </span>
+            <span className="text-white/20">|</span>
+            <ScrollTopLink className="text-white transition-colors hover:text-[#B8D9EA] cursor-pointer">
+              {t("Footer.backToTop")}
+            </ScrollTopLink>
+          </div>
         </div>
 
       </div>

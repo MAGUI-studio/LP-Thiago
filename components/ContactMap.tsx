@@ -2,12 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { Clock, MapPin, ArrowUpRight } from "@phosphor-icons/react";
+import Link from "next/link";
 
 export default function ContactMap() {
   const t = useTranslations();
 
   return (
-    <section id="contato" className="py-24 bg-gray-50/50 border-b border-gray-100 font-sans text-[#021422]">
+    <section id={t("Header.anchorContact")} className="py-24 bg-gray-50/50 border-b border-gray-100 font-sans text-[#021422]">
       <div className="w-full px-6 sm:px-12 lg:px-20">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-stretch">
@@ -71,7 +72,7 @@ export default function ContactMap() {
 
             {/* Action CTA */}
             <div className="pt-2">
-              <a 
+              <Link 
                 href="https://instagram.com/thiagooficinaescola" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -79,7 +80,7 @@ export default function ContactMap() {
               >
                 {t("ContactMap.whatsappButton")}
                 <ArrowUpRight className="w-4 h-4" weight="bold" />
-              </a>
+              </Link>
             </div>
           </div>
 

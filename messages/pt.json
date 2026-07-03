@@ -6,7 +6,13 @@
     "routine": "Rotina Técnica",
     "partners": "Parceiros",
     "cta": "Entrar em Contato",
-    "badge": "MANUTENÇÃO DE BICICLETAS EM ALTA PERFORMANCE"
+    "badge": "MANUTENÇÃO DE BICICLETAS EM ALTA PERFORMANCE",
+    "bannerText": "NOVO CURSO: Fox Transfer Hidráulico — Aprenda o método avançado por apenas R$ 299,90",
+    "bannerCTA": "Garantir Vaga",
+    "anchorAbout": "sobre",
+    "anchorServices": "servicos",
+    "anchorSchool": "escola",
+    "anchorContact": "contato"
   },
   "Hero": {
     "subtitle": "OFICINA DE ALTA PERFORMANCE",
@@ -56,23 +62,13 @@
     "card3Location": "Mundiais"
   },
   "School": {
-    "badge": "CURSOS E TREINAMENTOS",
-    "title": "Cursos Individuais e Profissionais",
-    "description": "Treinamentos práticos diretos na bancada com Thiago Bustamante, focados em capacitar você no mais alto nível técnico.",
+    "badge": "CURSOS ONLINE HOTMART",
+    "title": "Nossos Cursos de Suspensão e Mecânica",
+    "description": "Capacitação técnica de alta performance com Thiago Mecânico. Aprenda com o método profissional direto da bancada.",
     "cta": "Falar no WhatsApp",
+    "buyCourse": "Garantir Vaga",
     "viewAll": "Ver todos os cursos",
-    "course1Title": "Mecânica Básica e Preventiva",
-    "course1Desc": "Aprenda a fazer revisões preventivas, regulagem de marchas, freios e cuidados essenciais no dia a dia.",
-    "course2Title": "Manutenção Avançada de Suspensões",
-    "course2Desc": "Calibração fina, lubrificação e reparo de amortecedores traseiros e suspensões Fox e RockShox.",
-    "course3Title": "Freios Hidráulicos e Sangria",
-    "course3Desc": "Manutenção de sistemas hidráulicos de elite, sangria a vácuo e substituição de retentores.",
-    "course4Title": "Transmissões Eletrônicas",
-    "course4Desc": "Configuração, atualização de firmware e ajuste fino de sistemas SRAM AXS e Shimano Di2.",
-    "course5Title": "Montagem e Alinhamento de Rodas",
-    "course5Desc": "Tensionamento de raios, alinhamento de aros de carbono e alumínio, montagem do zero.",
-    "course6Title": "Formação Profissional Completa",
-    "course6Desc": "Treinamento intensivo individual cobrindo toda a mecânica de elite do mercado e gestão de oficina."
+    "hotmartCourseDesc": "Curso prático online com foco em diagnóstico, manutenção e regulagem de alta precisão."
   },
   "Demo": {
     "badge": "Demonstração ao Vivo",
@@ -99,12 +95,17 @@
     "schoolTitle": "Oficina Escola",
     "schoolText": "Cursos presenciais e digitais (Hotmart). Capacitação técnica especializada.",
     "rights": "© {year} Thiago Mecânico. Todos os direitos reservados.",
-    "credits": "Desenvolvido com foco em alta performance."
+    "credits": "Desenvolvido com foco em alta performance.",
+    "offeredBy": "Oferecido por",
+    "backToTop": "Voltar ao topo"
   },
   "Cursos": {
+    "back": "Voltar para Início",
     "title": "Todos os Cursos",
-    "description": "Capacitação completa e individual direta na bancada. Escolha o curso ideal para seu momento.",
-    "back": "Voltar para o início"
+    "description": "Veja abaixo todos os cursos disponíveis na plataforma Hotmart ministrados por Thiago Bustamante.",
+    "searchPlaceholder": "Pesquisar curso...",
+    "course": "curso",
+    "courses": "cursos"
   },
   "FAQ": {
     "title": "Perguntas Frequentes",
@@ -148,5 +149,16 @@
     "badge": "INFRAESTRUTURA",
     "title": "Estrutura e Equipamentos",
     "desc": "Um ambiente planejado com ferramental profissional de nível internacional para diagnósticos rápidos e precisos."
+  },
+  "Raffle": {
+    "badge": "RIFA EXCLUSIVA",
+    "title": "Participe da Rifa de Elite",
+    "desc": "Concorra a um Poste Pneumático DMD + Braço Longaero. Equipamentos profissionais de alto nível para sua oficina ou uso pessoal.",
+    "priceLabel": "Valor por número",
+    "priceValue": "R$ 30,00",
+    "detailsTitle": "Sobre os Prêmios:",
+    "detail1": "Poste Pneumático DMD: Robustez máxima para elevação de bicicletas pesadas de e-bike e MTB.",
+    "detail2": "Braço Longaero: Ajuste milimétrico para fixação segura direto na bancada de trabalho.",
+    "cta": "Adquirir Números"
   }
 }

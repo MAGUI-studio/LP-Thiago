@@ -6,7 +6,13 @@
     "routine": "Technical Routine",
     "partners": "Partners",
     "cta": "Get in Touch",
-    "badge": "HIGH-PERFORMANCE BICYCLE MAINTENANCE"
+    "badge": "HIGH-PERFORMANCE BICYCLE MAINTENANCE",
+    "bannerText": "NEW COURSE: Fox Transfer Hydraulic — Learn the advanced method for only R$ 299.90",
+    "bannerCTA": "Buy Now",
+    "anchorAbout": "about",
+    "anchorServices": "services",
+    "anchorSchool": "school",
+    "anchorContact": "contact"
   },
   "Hero": {
     "subtitle": "HIGH-PERFORMANCE WORKSHOP",
@@ -56,23 +62,13 @@
     "card3Location": "World Stage"
   },
   "School": {
-    "badge": "COURSES & TRAINING",
-    "title": "Individual & Professional Courses",
-    "description": "Hands-on training directly at the workbench with Thiago Bustamante, focused on training you to the highest technical level.",
+    "badge": "HOTMART ONLINE COURSES",
+    "title": "Our Suspension & Mechanics Courses",
+    "description": "High-performance technical specialization with Thiago Mecânico. Learn from the professional method directly from the workbench.",
     "cta": "Chat on WhatsApp",
+    "buyCourse": "Buy Now",
     "viewAll": "View all courses",
-    "course1Title": "Basic & Preventive Mechanics",
-    "course1Desc": "Learn to perform preventive maintenance, gear tuning, brake adjustments, and essential daily care.",
-    "course2Title": "Advanced Suspension Overhaul",
-    "course2Desc": "Fine-tuning, lubrication, and repair of Fox and RockShox rear shocks and forks.",
-    "course3Title": "Hydraulic Brakes & Bleeding",
-    "course3Desc": "Maintenance of elite hydraulic systems, vacuum bleeding, and seal replacements.",
-    "course4Title": "Electronic Drivetrains",
-    "course4Desc": "Configuration, firmware updates, and fine-tuning of SRAM AXS and Shimano Di2 systems.",
-    "course5Title": "Wheel Building & Truing",
-    "course5Desc": "Spoke tensioning, carbon and alloy rim alignment, custom wheel building from scratch.",
-    "course6Title": "Complete Professional Training",
-    "course6Desc": "Intensive one-on-one training covering the entire elite mechanical market and workshop management."
+    "hotmartCourseDesc": "Online practical course focusing on diagnosis, maintenance, and high-precision tuning."
   },
   "Demo": {
     "badge": "Live Demonstration",
@@ -99,12 +95,17 @@
     "schoolTitle": "Workshop School",
     "schoolText": "In-person and digital courses (Hotmart). Specialized technical training.",
     "rights": "© {year} Thiago Mecânico. All rights reserved.",
-    "credits": "Developed with a focus on high performance."
+    "credits": "Developed with a focus on high performance.",
+    "offeredBy": "Offered by",
+    "backToTop": "Back to top"
   },
   "Cursos": {
+    "back": "Back to Home",
     "title": "All Courses",
-    "description": "Complete and individual hands-on training directly at the workbench. Choose the ideal course for your goals.",
-    "back": "Back to Home"
+    "description": "Browse all available courses on the Hotmart platform taught by Thiago Bustamante.",
+    "searchPlaceholder": "Search course...",
+    "course": "course",
+    "courses": "courses"
   },
   "FAQ": {
     "title": "Frequently Asked Questions",
@@ -148,5 +149,16 @@
     "badge": "INFRASTRUCTURE",
     "title": "Syllabus & Workshop Infrastructure",
     "desc": "A meticulously organized environment with international-grade professional tools for rapid, high-precision diagnostics."
+  },
+  "Raffle": {
+    "badge": "EXCLUSIVE RAFFLE",
+    "title": "Join Our Elite Raffle",
+    "desc": "Win a DMD Pneumatic Stand + Longaero Arm. Professional top-tier equipment for your workshop or personal setup.",
+    "priceLabel": "Price per number",
+    "priceValue": "R$ 30.00",
+    "detailsTitle": "Prizes Information:",
+    "detail1": "DMD Pneumatic Stand: Maximum robustness for raising heavy bikes such as e-bikes and MTBs.",
+    "detail2": "Longaero Arm: Millimetric adjustments for secure workbench mount.",
+    "cta": "Get Numbers"
   }
 }

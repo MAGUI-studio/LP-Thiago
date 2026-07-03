@@ -6,7 +6,13 @@
     "routine": "Rutina Técnica",
     "partners": "Socios",
     "cta": "Contactar",
-    "badge": "MANTENIMIENTO DE BICICLETAS EN ALTO RENDIMIENTO"
+    "badge": "MANTENIMIENTO DE BICICLETAS EN ALTO RENDIMIENTO",
+    "bannerText": "NUEVO CURSO: Fox Transfer Hidráulico — Aprende el método avanzado por solo R$ 299,90",
+    "bannerCTA": "Comprar Ahora",
+    "anchorAbout": "sobre",
+    "anchorServices": "servicios",
+    "anchorSchool": "escuela",
+    "anchorContact": "contacto"
   },
   "Hero": {
     "subtitle": "TALLER DE ALTO RENDIMIENTO",
@@ -56,23 +62,13 @@
     "card3Location": "Mundiales"
   },
   "School": {
-    "badge": "CURSOS Y FORMACIÓN",
-    "title": "Cursos Individuales y Profesionales",
-    "description": "Entrenamientos prácticos directamente en el banco de trabajo con Thiago Bustamante, enfocados en capacitarte al más alto nivel técnico.",
-    "cta": "Hablar en WhatsApp",
+    "badge": "CURSOS ONLINE HOTMART",
+    "title": "Nuestros Cursos de Suspensión y Mecánica",
+    "description": "Capacitación técnica de alto rendimiento con Thiago Mecánico. Aprenda con el método profesional directamente desde el banco de trabajo.",
+    "cta": "Contactar por WhatsApp",
+    "buyCourse": "Comprar Ahora",
     "viewAll": "Ver todos los cursos",
-    "course1Title": "Mecánica Básica y Preventiva",
-    "course1Desc": "Aprende a realizar mantenimientos preventivos, ajuste de marchas, frenos y cuidados diarios esenciales.",
-    "course2Title": "Mantenimiento Avanzado de Suspensiones",
-    "course2Desc": "Calibración fina, lubricación y reparación de amortiguadores traseros y horquillas Fox y RockShox.",
-    "course3Title": "Frenos Hidráulicos y Purga",
-    "course3Desc": "Mantenimiento de sistemas hidráulicos de élite, purgado al vacío y reemplazo de retenedores.",
-    "course4Title": "Transmisiones Electrónicas",
-    "course4Desc": "Configuración, actualización de firmware y ajuste fino de sistemas SRAM AXS y Shimano Di2.",
-    "course5Title": "Montaje y Centrado de Ruedas",
-    "course5Desc": "Tensionado de radios, alineación de llantas de carbono y aluminio, montaje desde cero.",
-    "course6Title": "Formación Profesional Completa",
-    "course6Desc": "Entrenamiento intensivo individual que cubre toda la mecánica de élite del mercado y la gestión del taller."
+    "hotmartCourseDesc": "Curso práctico online enfocado al diagnóstico, mantenimiento y regulación de alta precisión."
   },
   "Demo": {
     "badge": "Demostración en Vivo",
@@ -99,12 +95,17 @@
     "schoolTitle": "Taller Escuela",
     "schoolText": "Cursos presenciales y digitales (Hotmart). Capacitación técnica especializada.",
     "rights": "© {year} Thiago Mecânico. Todos los derechos reservados.",
-    "credits": "Desarrollado con enfoque en alto rendimiento."
+    "credits": "Desarrollado con enfoque en alto rendimiento.",
+    "offeredBy": "Ofrecido por",
+    "backToTop": "Volver arriba"
   },
   "Cursos": {
+    "back": "Volver al Inicio",
     "title": "Todos los Cursos",
-    "description": "Capacitación completa e individual directamente en el banco de trabajo. Elige el curso ideal para tus objetivos.",
-    "back": "Volver al Inicio"
+    "description": "Vea a continuación todos los cursos disponibles en la plataforma Hotmart dictados por Thiago Bustamante.",
+    "searchPlaceholder": "Buscar curso...",
+    "course": "curso",
+    "courses": "cursos"
   },
   "FAQ": {
     "title": "Preguntas Frecuentes",
@@ -148,5 +149,17 @@
     "badge": "INFRAESTRUCTURA",
     "title": "Estructura y Equipos",
     "desc": "Un entorno de trabajo organizado con herramientas profesionales de nivel internacional para diagnósticos rápidos y de alta precisión."
+  },
+  "Raffle": {
+    "badge": "RIFA EXCLUSIVA",
+    "title": "Participe en la Rifa de Élite",
+    "desc": "Participe para ganar un Soporte Neumático DMD + Brazo Longaero. Equipos profesionales del más alto nivel para su taller o uso personal.",
+    "priceLabel": "Precio por número",
+    "priceValue": "R$ 30,00",
+    "detailsTitle": "Sobre los Premios:",
+    "detail1": "Soporte Neumático DMD: Máxima robustez para elevar bicicletas pesadas como e-bikes y MTB.",
+    "detail2": "Brazo Longaero: Ajuste milimétrico para fijación segura directamente al banco de trabajo.",
+    "cta": "Adquirir Números",
+    "whatsappInfo": ""
   }
 }

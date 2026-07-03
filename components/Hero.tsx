@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Check, ArrowUpRight, CaretLeft, CaretRight, X } from "@phosphor-icons/react";
+import { Check, ArrowUpRight, X } from "@phosphor-icons/react";
+import Link from "next/link";
 
 export default function Hero() {
   const t = useTranslations();
@@ -24,9 +25,9 @@ export default function Hero() {
             <p className="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
               {t("Hero.paragraph")}
             </p>
-
+ 
             <div className="flex flex-wrap gap-4 pt-4">
-              <a 
+              <Link 
                 href="https://instagram.com/thiagooficinaescola" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -34,13 +35,13 @@ export default function Hero() {
               >
                 {t("Hero.ctaSchedule")}
                 <ArrowUpRight className="w-4 h-4" weight="bold" />
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="#servicos" 
                 className="bg-transparent border border-white/20 text-white font-semibold px-6 py-3.5 rounded-lg hover:border-white text-sm transition-all duration-300"
               >
                 {t("Hero.ctaServices")}
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -77,20 +78,6 @@ export default function Hero() {
             className="object-cover object-center"
             priority
           />
-
-          {/* Floating Premium Card (top-right) */}
-          <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-md text-[#021422] p-6 rounded-2xl shadow-2xl max-w-[240px] border border-gray-100 z-20 flex flex-col gap-2">
-            <div className="flex justify-between items-start">
-              <span className="text-4xl font-extrabold text-[#021422] leading-none">8</span>
-              <X className="w-4 h-4 text-gray-400 opacity-60 cursor-pointer" />
-            </div>
-            <span className="font-bold text-xs uppercase tracking-wider text-[#021422]">
-              {t("Hero.cardTitle")}
-            </span>
-            <p className="text-[11px] text-gray-500 font-light leading-snug">
-              {t("Hero.cardText")}
-            </p>
-          </div>
         </div>
 
       </div>
