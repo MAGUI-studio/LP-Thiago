@@ -267,6 +267,9 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                   height={16}
                   className="object-contain rounded-[2px]"
                 />
+                <span className="sr-only">
+                  Alterar idioma (Atual: {getLocaleName(locale)})
+                </span>
               </button>
 
               {isDesktopDropdownOpen && (
@@ -289,6 +292,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                           height={16}
                           className="object-contain rounded-[2px]"
                         />
+                        <span className="sr-only">{getLocaleName(loc)}</span>
                       </button>
                     );
                   })}
@@ -474,6 +478,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                   <Link
                     href="https://www.instagram.com/thiagooficinaescola"
                     target="_blank"
+                    aria-label="Instagram"
                     className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
                   >
                     <InstagramLogo className="w-5 h-5" />
@@ -481,6 +486,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                   <Link
                     href="https://www.tiktok.com/@thiago.mecanico"
                     target="_blank"
+                    aria-label="TikTok"
                     className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
                   >
                     <TiktokLogo className="w-5 h-5" />
@@ -488,6 +494,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                   <Link
                     href="https://www.youtube.com/@ThiagoMecanico"
                     target="_blank"
+                    aria-label="YouTube"
                     className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#F6AE0D] transition-colors"
                   >
                     <YoutubeLogo className="w-5 h-5" />

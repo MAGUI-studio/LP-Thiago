@@ -36,16 +36,10 @@ export default function WorkspaceGallery() {
   const openLightbox = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(true);
-    if (typeof window !== "undefined") {
-      document.body.style.overflow = "hidden";
-    }
   };
 
   const closeLightbox = () => {
     setIsOpen(false);
-    if (typeof window !== "undefined") {
-      document.body.style.overflow = "unset";
-    }
   };
 
   const handlePrev = () => {
@@ -55,6 +49,18 @@ export default function WorkspaceGallery() {
   const handleNext = () => {
     setCurrentIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
   };
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -70,15 +76,6 @@ export default function WorkspaceGallery() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [isOpen]);
-
-  // Clean up overflow on unmount
-  useEffect(() => {
-    return () => {
-      if (typeof window !== "undefined") {
-        document.body.style.overflow = "unset";
-      }
-    };
-  }, []);
 
   return (
     <section id="estrutura" className="py-24 bg-white border-b border-gray-100 font-sans text-[#021422]">
