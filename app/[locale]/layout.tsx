@@ -15,19 +15,49 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
+    metadataBase: new URL("https://thiagooficinaescola.com.br"),
     title: t("title"),
     description: t("description"),
     keywords: t("keywords"),
+    alternates: {
+      canonical: `/${locale === "pt" ? "" : locale}`,
+      languages: {
+        pt: "/",
+        en: "/en",
+        es: "/es",
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      images: ["/logo.png"],
+      images: [
+        {
+          url: "/og-image.webp",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+      locale: locale === "pt" ? "pt_BR" : locale === "es" ? "es_ES" : "en_US",
+      type: "website",
+      siteName: "Thiago Oficina Escola",
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/logo.png"],
+      images: ["/og-image.webp"],
     },
   };
 }
