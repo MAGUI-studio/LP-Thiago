@@ -109,7 +109,7 @@ export default function Products() {
               return (
                 <div
                   key={index}
-                  className="relative snap-start shrink-0 w-[290px] sm:w-[330px] bg-white border border-gray-100 p-8 flex flex-col justify-between h-[470px] hover:-translate-y-1 transition-all duration-300 rounded-none overflow-hidden group/card"
+                  className="relative snap-start shrink-0 w-[290px] sm:w-[330px] bg-white border border-gray-100 p-8 flex flex-col justify-between h-130 hover:-translate-y-1 transition-all duration-300 rounded-none overflow-hidden group/card"
                 >
                   <Package className="absolute -right-6 -bottom-6 w-32 h-32 text-gray-100 opacity-40 pointer-events-none z-0" />
 
@@ -125,7 +125,7 @@ export default function Products() {
                       </span>
                     </div>
 
-                    <div className="relative w-full h-48 flex items-center justify-center">
+                    <div className="relative w-full h-70 flex items-center justify-center">
                       <Image
                         src={product.image}
                         alt={product.name}
