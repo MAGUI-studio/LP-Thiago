@@ -81,7 +81,7 @@ export default function ProdutosPage() {
                 return (
                   <div
                     key={product.id}
-                    className="relative bg-white border border-gray-200/80 p-8 rounded-none flex flex-col justify-between h-140 overflow-hidden group hover:-translate-y-1 transition-all duration-300"
+                    className="relative bg-white border border-gray-200/80 p-8 rounded-none flex flex-col justify-between h-[470px] overflow-hidden group hover:-translate-y-1 transition-all duration-300"
                   >
                     <Package className="absolute -right-6 -bottom-6 w-32 h-32 text-gray-100 opacity-40 pointer-events-none z-0" />
 
@@ -97,8 +97,7 @@ export default function ProdutosPage() {
                         </span>
                       </div>
 
-                      {/* Product Photo */}
-                      <div className="relative w-full h-80 flex items-center justify-center">
+                      <div className="relative w-full h-48 flex items-center justify-center">
                         <Image
                           src={product.image}
                           alt={product.name}

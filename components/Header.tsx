@@ -131,12 +131,10 @@ export default function Header({ transparent = false }: { transparent?: boolean 
           id="inicio"
           className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10 w-full transition-all duration-500 overflow-hidden"
         >
-          {/* Shimmer Effect */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
             <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent absolute top-0 left-0" style={{ animation: "shimmer 4s infinite" }} />
           </div>
 
-          {/* Watermark Background Icons */}
           <Megaphone className="absolute -left-6 top-1/2 -translate-y-1/2 w-20 h-20 text-[#021422] opacity-[0.05] pointer-events-none z-0 rotate-12" weight="fill" />
           <Sparkle className="absolute -right-6 top-1/2 -translate-y-1/2 w-16 h-16 text-[#021422] opacity-[0.05] pointer-events-none z-0 -rotate-12" weight="fill" />
 
@@ -165,7 +163,6 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             />
           </Link>
 
-          {/* Progress Bar Indicator */}
           <div className="absolute bottom-0 left-0 h-[2.5px] bg-black/5 w-full z-10 pointer-events-none">
             <div 
               key={activeBanner}
@@ -522,12 +519,10 @@ export default function Header({ transparent = false }: { transparent?: boolean 
         id="inicio"
         className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-around gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10 transition-all duration-500 overflow-hidden"
       >
-        {/* Shimmer Effect */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent absolute top-0 left-0" style={{ animation: "shimmer 4s infinite" }} />
         </div>
 
-        {/* Watermark Background Icons */}
         <Megaphone className="absolute -left-6 top-1/2 -translate-y-1/2 w-20 h-20 text-[#021422] opacity-[0.05] pointer-events-none z-0 rotate-12" weight="fill" />
         <Sparkle className="absolute -right-6 top-1/2 -translate-y-1/2 w-16 h-16 text-[#021422] opacity-[0.05] pointer-events-none z-0 -rotate-12" weight="fill" />
 
@@ -556,7 +551,6 @@ export default function Header({ transparent = false }: { transparent?: boolean 
           />
         </Link>
 
-        {/* Progress Bar Indicator */}
         <div className="absolute bottom-0 left-0 h-[2.5px] bg-black/5 w-full z-10 pointer-events-none">
           <div 
             key={activeBanner}

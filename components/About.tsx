@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ShieldCheck, Wrench, Globe } from "@phosphor-icons/react";
+
 
 export default function About() {
   const t = useTranslations();
