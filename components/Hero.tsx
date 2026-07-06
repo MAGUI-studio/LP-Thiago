@@ -21,7 +21,7 @@ export default function Hero() {
           priority
           className="object-cover object-center scale-105"
         />
-        {/* Smooth Dark Vignette Overlay */}
+
         <div className="absolute inset-0 bg-black/60 md:bg-black/40 z-10" />
         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#010a12] via-[#010a12]/95 md:via-[#010a12]/75 to-transparent z-10" />
       </div>

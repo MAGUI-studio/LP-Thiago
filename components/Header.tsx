@@ -146,7 +146,6 @@ export default function Header({ transparent = false }: { transparent?: boolean 
               animation: "slideInLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards"
             }}
           >
-            <Sparkle className="w-3.5 h-3.5 text-[#021422] animate-pulse shrink-0" weight="fill" />
             {bannerText}
           </span>
 
@@ -534,7 +533,6 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             animation: "slideInLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards"
           }}
         >
-          <Sparkle className="w-3.5 h-3.5 text-[#021422] animate-pulse shrink-0" weight="fill" />
           {bannerText}
         </span>
 
