@@ -14,6 +14,7 @@ const Testimonials = dynamic(() => import("@/components/Testimonials"));
 const FAQ = dynamic(() => import("@/components/FAQ"));
 const Raffle = dynamic(() => import("@/components/Raffle"));
 const ContactMap = dynamic(() => import("@/components/ContactMap"));
+const Products = dynamic(() => import("@/components/Products"));
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <School />
       <Team />
       <WorkspaceGallery />
+      <Products />
       <Raffle />
       <Testimonials />
       <FAQ />

@@ -18,6 +18,11 @@ export const routing = defineRouting({
       pt: '/cursos',
       en: '/courses',
       es: '/cursos'
+    },
+    '/produtos': {
+      pt: '/produtos',
+      en: '/products',
+      es: '/produtos'
     }
   }
 });

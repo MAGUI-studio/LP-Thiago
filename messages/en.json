@@ -8,6 +8,7 @@
     "cta": "Get in Touch",
     "badge": "HIGH-PERFORMANCE BICYCLE MAINTENANCE",
     "bannerText": "NEW COURSE: Fox Transfer Hydraulic — Learn the advanced method for only R$ 299.90",
+    "bannerTextReverb": "NEW COURSE: Rockshox Reverb AXS — For only R$ 99.90",
     "bannerCTA": "Buy Now",
     "anchorAbout": "about",
     "anchorServices": "services",
@@ -177,6 +178,19 @@
     "detail1": "DMD Pneumatic Stand: Maximum robustness for raising heavy bikes such as e-bikes and MTBs.",
     "detail2": "Longaero Arm: Millimetric adjustments for secure workbench mount.",
     "cta": "Get Numbers"
+  },
+  "Products": {
+    "badge": "EQUIPMENT & PARTS",
+    "title": "Available Items & Components",
+    "description": "Purchase premium spare parts, high-precision tools, and specialized components to guarantee the maximum performance and durability of your bike.",
+    "stock": "Stock: {quantity}",
+    "outOfStock": "Out of stock",
+    "buy": "Buy on WhatsApp",
+    "viewAll": "View more items",
+    "back": "Back to Home",
+    "searchPlaceholder": "Search item...",
+    "product": "item",
+    "products": "items"
   },
   "Metadata": {
     "title": "Thiago Mecânico | Elite Bicycle Workshop & School",

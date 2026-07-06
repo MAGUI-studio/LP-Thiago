@@ -12,6 +12,8 @@ import {
   InstagramLogo,
   YoutubeLogo,
   TiktokLogo,
+  Sparkle,
+  Megaphone,
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,8 +36,27 @@ export default function Header({ transparent = false }: { transparent?: boolean 
   const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeBanner, setActiveBanner] = useState(0);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveBanner((prev) => (prev === 0 ? 1 : 0));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const reverbMessages: Record<string, string> = {
+    pt: "Olá! Gostaria de comprar o curso Rockshox Reverb AXS anunciado no site por R$ 99,90.",
+    en: "Hello! I would like to buy the Rockshox Reverb AXS course advertised on the website for R$ 99.90.",
+    es: "¡Hola! Me gustaría comprar el curso Rockshox Reverb AXS anunciado en el sitio por R$ 99,90."
+  };
+  const reverbMsg = reverbMessages[locale] || reverbMessages.pt;
+  const reverbLink = `https://wa.me/5512981389215?text=${encodeURIComponent(reverbMsg)}`;
+
+  const bannerText = activeBanner === 0 ? t("Header.bannerText") : t("Header.bannerTextReverb");
+  const bannerLink = activeBanner === 0 ? "https://pay.hotmart.com/E106476498D?off=t79ctl2r&bid=1782556961286" : reverbLink;
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -108,17 +129,34 @@ export default function Header({ transparent = false }: { transparent?: boolean 
       <>
         <div
           id="inicio"
-          className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10 w-full"
+          className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10 w-full transition-all duration-500 overflow-hidden"
         >
-          <span className="font-title text-sm sm:text-xs leading-snug">
-            {t("Header.bannerText")}
+          {/* Shimmer Effect */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+            <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent absolute top-0 left-0" style={{ animation: "shimmer 4s infinite" }} />
+          </div>
+
+          {/* Watermark Background Icons */}
+          <Megaphone className="absolute -left-6 top-1/2 -translate-y-1/2 w-20 h-20 text-[#021422] opacity-[0.05] pointer-events-none z-0 rotate-12" weight="fill" />
+          <Sparkle className="absolute -right-6 top-1/2 -translate-y-1/2 w-16 h-16 text-[#021422] opacity-[0.05] pointer-events-none z-0 -rotate-12" weight="fill" />
+
+          <span 
+            key={activeBanner} 
+            className="font-title text-sm sm:text-xs leading-snug relative z-10 flex items-center justify-center gap-1.5"
+            style={{
+              display: "inline-flex",
+              animation: "slideInLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards"
+            }}
+          >
+            <Sparkle className="w-3.5 h-3.5 text-[#021422] animate-pulse shrink-0" weight="fill" />
+            {bannerText}
           </span>
 
           <Link
-            href="https://pay.hotmart.com/E106476498D?off=t79ctl2r&bid=1782556961286"
+            href={bannerLink}
             target="_blank"
             rel="noopener noreferrer"
-            className=" group inline-flex w-full md:w-fit bg-white text-[#021422] font-black px-6 py-3 rounded-none hover:bg-[#F6AE0D] items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300"
+            className="group inline-flex w-full md:w-fit bg-[#021422] text-white hover:bg-white hover:text-[#021422] border border-[#021422] font-black px-6 py-2.5 items-center justify-center gap-2.5 text-[10px] uppercase tracking-widest transition-all duration-300 shadow-[0_4px_12px_rgba(2,20,34,0.15)] hover:shadow-[0_4px_20px_rgba(2,20,34,0.25)] hover:-translate-y-[1px] active:translate-y-[1px] shrink-0 z-20 rounded-none"
           >
             {t("Header.bannerCTA")}
             <ArrowUpRight
@@ -126,6 +164,38 @@ export default function Header({ transparent = false }: { transparent?: boolean 
               weight="bold"
             />
           </Link>
+
+          {/* Progress Bar Indicator */}
+          <div className="absolute bottom-0 left-0 h-[2.5px] bg-black/5 w-full z-10 pointer-events-none">
+            <div 
+              key={activeBanner}
+              className="h-full bg-white/40 backdrop-blur-[1px] shadow-[0_0_4px_rgba(255,255,255,0.5)]"
+              style={{
+                animation: "bannerProgress 5000ms linear forwards"
+              }}
+            />
+          </div>
+          <style dangerouslySetInnerHTML={{__html: `
+            @keyframes bannerProgress {
+              from { width: 0%; }
+              to { width: 100%; }
+            }
+            @keyframes slideInLeft {
+              from {
+                opacity: 0;
+                transform: translateX(-30px);
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            @keyframes shimmer {
+              0% { transform: translateX(-150%); }
+              50% { transform: translateX(150%); }
+              100% { transform: translateX(150%); }
+            }
+          `}} />
         </div>
 
         <header className="relative w-full bg-transparent border-none text-white z-50">
@@ -450,17 +520,34 @@ export default function Header({ transparent = false }: { transparent?: boolean 
     <>
       <div
         id="inicio"
-        className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-around gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10"
+        className="bg-[#F6AE0D] text-[#021422] py-3.5 px-6 text-center text-xs font-black uppercase tracking-wider flex flex-col sm:flex-row items-center justify-around gap-3 sm:gap-6 relative z-50 border-b border-[#021422]/10 transition-all duration-500 overflow-hidden"
       >
-        <span className="font-title text-sm sm:text-xs leading-snug">
-          {t("Header.bannerText")}
+        {/* Shimmer Effect */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+          <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent absolute top-0 left-0" style={{ animation: "shimmer 4s infinite" }} />
+        </div>
+
+        {/* Watermark Background Icons */}
+        <Megaphone className="absolute -left-6 top-1/2 -translate-y-1/2 w-20 h-20 text-[#021422] opacity-[0.05] pointer-events-none z-0 rotate-12" weight="fill" />
+        <Sparkle className="absolute -right-6 top-1/2 -translate-y-1/2 w-16 h-16 text-[#021422] opacity-[0.05] pointer-events-none z-0 -rotate-12" weight="fill" />
+
+        <span 
+          key={activeBanner} 
+          className="font-title text-sm sm:text-xs leading-snug relative z-10 flex items-center justify-center gap-1.5"
+          style={{
+            display: "inline-flex",
+            animation: "slideInLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards"
+          }}
+        >
+          <Sparkle className="w-3.5 h-3.5 text-[#021422] animate-pulse shrink-0" weight="fill" />
+          {bannerText}
         </span>
 
         <Link
-          href="https://pay.hotmart.com/E106476498D?off=t79ctl2r&bid=1782556961286"
+          href={bannerLink}
           target="_blank"
           rel="noopener noreferrer"
-          className=" group inline-flex w-full md:w-fit bg-white text-[#021422] font-black px-8 py-4 rounded-none hover:bg-[#F6AE0D] items-center gap-3 text-xs uppercase tracking-widest transition-all duration-300"
+          className="group inline-flex w-full md:w-fit bg-[#021422] text-white hover:bg-white hover:text-[#021422] border border-[#021422] font-black px-8 py-3.5 items-center justify-center gap-2.5 text-[10px] uppercase tracking-widest transition-all duration-300 shadow-[0_4px_12px_rgba(2,20,34,0.15)] hover:shadow-[0_4px_20px_rgba(2,20,34,0.25)] hover:-translate-y-[1px] active:translate-y-[1px] shrink-0 z-20 rounded-none"
         >
           {t("Header.bannerCTA")}
           <ArrowUpRight
@@ -468,6 +555,38 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             weight="bold"
           />
         </Link>
+
+        {/* Progress Bar Indicator */}
+        <div className="absolute bottom-0 left-0 h-[2.5px] bg-black/5 w-full z-10 pointer-events-none">
+          <div 
+            key={activeBanner}
+            className="h-full bg-white/40 backdrop-blur-[1px] shadow-[0_0_4px_rgba(255,255,255,0.5)]"
+            style={{
+              animation: "bannerProgress 5000ms linear forwards"
+            }}
+          />
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes bannerProgress {
+            from { width: 0%; }
+            to { width: 100%; }
+          }
+          @keyframes slideInLeft {
+            from {
+              opacity: 0;
+              transform: translateX(-30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+          @keyframes shimmer {
+            0% { transform: translateX(-150%); }
+            50% { transform: translateX(150%); }
+            100% { transform: translateX(150%); }
+          }
+        `}} />
       </div>
 
       <header className="bg-[#021422] text-white border-b border-white/10 relative z-50">

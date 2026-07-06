@@ -8,6 +8,7 @@
     "cta": "Entrar em Contato",
     "badge": "MANUTENÇÃO DE BICICLETAS EM ALTA PERFORMANCE",
     "bannerText": "NOVO CURSO: Fox Transfer Hidráulico — Aprenda o método avançado por apenas R$ 299,90",
+    "bannerTextReverb": "NOVO CURSO: Rockshox Reverb AXS — Por apenas R$ 99,90",
     "bannerCTA": "Garantir Vaga",
     "anchorAbout": "sobre",
     "anchorServices": "servicos",
@@ -177,6 +178,19 @@
     "detail1": "Poste Pneumático DMD: Robustez máxima para elevação de bicicletas pesadas de e-bike e MTB.",
     "detail2": "Braço Longaero: Ajuste milimétrico para fixação segura direto na bancada de trabalho.",
     "cta": "Adquirir Números"
+  },
+  "Products": {
+    "badge": "EQUIPAMENTOS E PEÇAS",
+    "title": "Itens e Componentes Disponíveis",
+    "description": "Adquira peças de reposição premium, ferramentas de alta precisão e componentes especializados para garantir a máxima performance e durabilidade da sua bike.",
+    "stock": "Qtd. disponível: {quantity}",
+    "outOfStock": "Esgotado",
+    "buy": "Comprar no WhatsApp",
+    "viewAll": "Ver mais itens",
+    "back": "Voltar para Início",
+    "searchPlaceholder": "Pesquisar item...",
+    "product": "item",
+    "products": "itens"
   },
   "Metadata": {
     "title": "Thiago Mecânico | Oficina e Escola de Mecânica de Bicicletas de Elite",

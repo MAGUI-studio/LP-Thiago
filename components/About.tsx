@@ -18,7 +18,7 @@ export default function About() {
             src="/thiago.webp"
             alt="Thiago Bustamante"
             fill
-            className="object-cover object-center scale-105"
+            className="object-cover object-top scale-105"
             priority
           />
         </div>
@@ -39,28 +39,6 @@ export default function About() {
                 {t("About.paragraph1")}
               </p>
               <p className="text-gray-500 max-w-2xl">{t("About.paragraph2")}</p>
-            </div>
-
-            <div className="flex flex-col gap-2 pt-4">
-              {[
-                { icon: ShieldCheck, text: t("About.bullet1") },
-                { icon: Wrench, text: t("About.bullet2") },
-                { icon: Globe, text: t("About.bullet3") },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="group relative w-full py-8 border-b border-gray-200 flex items-center justify-between overflow-hidden transition-colors hover:border-[#021422]"
-                >
-                  <span className="relative z-10 text-xs font-black uppercase tracking-[0.2em] text-[#021422]">
-                    {item.text}
-                  </span>
-
-                  <item.icon
-                    className="w-12 h-12 text-gray-100 group-hover:text-[#F6AE0D] transition-colors duration-500"
-                    weight="duotone"
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </div>

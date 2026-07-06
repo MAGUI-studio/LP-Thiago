@@ -8,6 +8,7 @@
     "cta": "Contactar",
     "badge": "MANTENIMIENTO DE BICICLETAS EN ALTO RENDIMIENTO",
     "bannerText": "NUEVO CURSO: Fox Transfer Hidráulico — Aprende el método avanzado por solo R$ 299,90",
+    "bannerTextReverb": "NUEVO CURSO: Rockshox Reverb AXS — Por solo R$ 99,90",
     "bannerCTA": "Comprar Ahora",
     "anchorAbout": "sobre",
     "anchorServices": "servicios",
@@ -178,6 +179,19 @@
     "detail2": "Brazo Longaero: Ajuste milimétrico para fijación segura directamente al banco de trabajo.",
     "cta": "Adquirir Números",
     "whatsappInfo": ""
+  },
+  "Products": {
+    "badge": "EQUIPAMIENTOS Y REPUESTOS",
+    "title": "Artículos y Componentes Disponibles",
+    "description": "Adquiera repuestos premium, herramientas de alta precisión y componentes especializados para garantizar el máximo rendimiento y durabilidad de su bicicleta.",
+    "stock": "Stock: {quantity}",
+    "outOfStock": "Agotado",
+    "buy": "Comprar en WhatsApp",
+    "viewAll": "Ver más artículos",
+    "back": "Voltar al Inicio",
+    "searchPlaceholder": "Buscar artículo...",
+    "product": "artículo",
+    "products": "artículos"
   },
   "Metadata": {
     "title": "Thiago Mecânico | Taller Concepto y Escuela de Mecánica de Bicicletas",
